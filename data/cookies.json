@@ -1,0 +1,25 @@
+{
+    "cookies": [
+        {
+            "id": "C001",
+            "name": "Hello Spring Cookie Set",
+            "img": "images/cookies/cookie1.jpg",
+            "description": "Hand-decorated sugar cookies perfect for spring celebrations.",
+            "tags": ["spring", "holiday", "gift"]
+        },
+        {
+            "id": "C002",
+            "name": "Baby Shower Cookies",
+            "img": "images/cookies/cookie2.jpg",
+            "description": "Custom cookie designs for your baby shower or gender reveal.",
+            "tags": ["baby", "shower", "event"]
+        },
+        {
+            "id": "C003",
+            "name": "Birthday Cookie Set",
+            "img": "images/cookies/cookie3.jpg",
+            "description": "Celebrate birthdays with our colorful and delicious cookies.",
+            "tags": ["birthday", "party", "custom"]
+        }
+    ]
+}

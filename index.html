@@ -1,12 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sweet Roses and More</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/rose.css">
+    <link rel="stylesheet" href="styles/card.css">
 </head>
+
 <body>
-    <h1>Welcome to Sweet Roses and More</h1>
-    <p>Your one-stop shop for beautiful roses and unique gifts.</p> 
+
+<!-- Hero Section -->
+<header class="hero-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Left: Logo -->
+            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                <img src="images/logoNoBG.png" alt="Sweet Roses & More Logo" class="img-fluid" style="max-height: 300px;">
+            </div>
+
+            <!-- Right: Title + Tagline -->
+            <div class="col-md-6 text-center text-md-start">
+                <h1 class="display-5 fw-bold">SWEET ROSES & MORE</h1>
+                <p class="lead">Delicious sweets for every mood!</p>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+    <!-- About Section -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Left Column: About Text -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h2 class="section-title">All About Sweet Roses & More</h2>
+                <p>We have been serving irresistible custom sweet treats since 2021. Our mission is to keep you smiling with every bite.</p>
+                <p>Treat yourself to a feel-good sweet today!</p>
+            </div>
+
+            <!-- Right Column: Rose Animation -->
+            <div class="col-md-6 text-center">
+                <div class="rose-spinner">
+                    <div class="rose">
+                        <!-- 8 petals -->
+                        <span></span><span></span><span></span><span></span>
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                    <!-- Optional stem + leaf -->
+                    <div class="stem"></div>
+                    <div class="leaf"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">Search Our Cookies</h2>
+    <div class="input-group mb-4">
+      <input type="text" id="cookie-search" class="form-control" placeholder="Search for cookies!">
+      <button class="btn btn-primary" id="cookie-search-btn">Search</button>
+    </div>
+    <div id="cookies-container" class="row g-4">
+      <!-- Cookies will be dynamically inserted here -->
+    </div>
+  </div>
+      <div class="text-center mt-5">
+        <a href="#" class="btn btn-primary">View More</a>
+    </div>
+</section>
+
+
+
+
+<!-- Testimonials Section -->
+<section class="py-5 testimonials-section text-center">
+    <div class="container">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div id="testimonials-container" class="row g-4">
+            <!-- Testimonials will be dynamically inserted here -->
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="fs-5 mb-1">Csilla Szentpeteri</p>
+            <p class="fs-5 mb-1">📞 <a href="tel:8472462400" class="text-white">847-246-2400</a></p>
+            <p class="fs-5 mb-1">📍 Bensenville</p>
+            <p class="fs-5 mb-3">✉️ <a href="mailto:sweetrosesandmore@yahoo.com"
+                    class="text-white">sweetrosesandmore@yahoo.com</a></p>
+            <div>
+                <a href="https://www.facebook.com/share/18kTqZhcQh/?mibextid=wwXIfr" target="_blank"
+                    class="btn btn-primary m-1">Facebook</a>
+                <a href="https://instagram.com/sweet_roses_and_more" target="_blank"
+                    class="btn btn-primary m-1">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 text-center" style="background-color: var(--color-footer);">
+        &copy; 2025 Sweet Roses & More | All Rights Reserved
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="scripts/main.js"></script>
+    <!-- Load cookies dynamically -->
+    <script src="scripts/cookies.js"></script>
+    <!-- Load testimonials dynamically -->
+    <script src="scripts/testimonials.js"></script>
 </body>
+
 </html>

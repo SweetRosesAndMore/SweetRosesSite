@@ -1,0 +1,50 @@
+/* Rose spinner container */
+.rose-spinner {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+/* Spinning rose core */
+.rose {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    animation: spin 8s linear infinite;
+}
+
+/* Petals */
+.rose span {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: var(--color-accent); /* Your rose pink */
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+}
+
+/* Position each petal around the circle */
+.rose span:nth-child(1) { transform: rotate(0deg) translate(70px) rotate(0deg); }
+.rose span:nth-child(2) { transform: rotate(45deg) translate(70px) rotate(-45deg); }
+.rose span:nth-child(3) { transform: rotate(90deg) translate(70px) rotate(-90deg); }
+.rose span:nth-child(4) { transform: rotate(135deg) translate(70px) rotate(-135deg); }
+.rose span:nth-child(5) { transform: rotate(180deg) translate(70px) rotate(-180deg); }
+.rose span:nth-child(6) { transform: rotate(225deg) translate(70px) rotate(-225deg); }
+.rose span:nth-child(7) { transform: rotate(270deg) translate(70px) rotate(-270deg); }
+.rose span:nth-child(8) { transform: rotate(315deg) translate(70px) rotate(-315deg); }
+
+/* Spin animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

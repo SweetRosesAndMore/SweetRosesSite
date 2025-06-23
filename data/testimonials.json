@@ -1,0 +1,25 @@
+{
+    "testimonials": [
+        {
+            "name": "Client 1",
+            "platform": "Facebook",
+            "img": "images/client1.jpg",
+            "quote": "I recently ordered sweets for my baby shower... the entire process smooth and enjoyable.",
+            "stars": 5
+        },
+        {
+            "name": "Client 2",
+            "platform": "Facebook",
+            "img": "images/client2.jpg",
+            "quote": "Sweet Roses and More is amazing... Her treats were gorgeous and delicious!",
+            "stars": 5
+        },
+        {
+            "name": "Client 3",
+            "platform": "Facebook",
+            "img": "images/client3.jpg",
+            "quote": "We placed a large cookie order... they were very tasty. Would definitely order again!",
+            "stars": 5
+        }
+    ]
+}
