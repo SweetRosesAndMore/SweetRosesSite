@@ -23,106 +23,177 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top custom-navbar">
+  <div class="container">
+
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="images/logoNoBG.png" alt="Sweet Roses & More" height="40" class="me-2">
+      <span class="fw-bold">Sweet&nbsp;Roses&nbsp;&amp;&nbsp;More</span>
+    </a>
+
+    <!-- Mobile toggle -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#mainNav"
+            aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/cookielibrary.html">All&nbsp;Our&nbsp;Cookies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/customOrder.html">Custom&nbsp;Order</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
 
 <!-- Hero Section -->
 <header class="hero-section py-5">
-    <div class="container">
-        <div class="row align-items-center">
-
-            <!-- Left: Logo -->
-            <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
-                <img src="images/logoNoBG.png" alt="Sweet Roses & More Logo" class="img-fluid" style="max-height: 300px;">
-            </div>
-
-            <!-- Right: Title + Tagline -->
-            <div class="col-md-6 text-center text-md-start">
-                <h1 class="display-5 fw-bold">SWEET ROSES & MORE</h1>
-                <p class="lead">Delicious sweets for every mood!</p>
-            </div>
-
-        </div>
-    </div>
-</header>
-
-
-    <!-- About Section -->
-<section class="py-5 bg-white">
-    <div class="container">
-        <div class="row align-items-center">
-
-            <!-- Left Column: About Text -->
-            <div class="col-md-6 mb-4 mb-md-0">
-                <h2 class="section-title">All About Sweet Roses & More</h2>
-                <p>We have been serving irresistible custom sweet treats since 2021. Our mission is to keep you smiling with every bite.</p>
-                <p>Treat yourself to a feel-good sweet today!</p>
-            </div>
-
-            <!-- Right Column: Rose Animation -->
-            <div class="col-md-6 text-center">
-                <div class="rose-spinner">
-                    <div class="rose">
-                        <!-- 8 petals -->
-                        <span></span><span></span><span></span><span></span>
-                        <span></span><span></span><span></span><span></span>
-                    </div>
-                    <!-- Optional stem + leaf -->
-                    <div class="stem"></div>
-                    <div class="leaf"></div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<section class="py-5">
   <div class="container">
-    <h2 class="section-title text-center mb-4">Search Our Cookies</h2>
-    <div class="input-group mb-4">
-      <input type="text" id="cookie-search" class="form-control" placeholder="Search for cookies!">
-      <button class="btn btn-primary" id="cookie-search-btn">Search</button>
-    </div>
-    <div id="cookies-container" class="row g-4">
-      <!-- Cookies will be dynamically inserted here -->
+    <div class="row align-items-center">
+      <!-- Logo -->
+      <div class="col-md-5 text-center text-md-start mb-4 mb-md-0">
+        <img src="images/logoNoBG.png"
+             alt="Sweet Roses & More Logo"
+             class="img-fluid" style="max-height:300px">
+      </div>
+
+      <!-- Instant “About” pitch -->
+      <div class="col-md-7 text-center text-md-start">
+        <h1 class="display-5 fw-bold">All About Sweet Roses More</h1>
+        <p class="lead mb-2">We’ve been serving irresistible custom sweet treats since 2021.</p>
+        <p class="lead">Our mission is to keep you smiling with every bite — treat yourself today!</p>
+      </div>
     </div>
   </div>
-      <div class="text-center mt-5">
-        <a href="#" class="btn btn-primary">View More</a>
-    </div>
-</section>
+</header>
 
+<div class="shape-trim"></div>
 
+<!-- Signature Rose Section -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <div class="row align-items-center">
 
+      <!-- Left : Text -->
+      <div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+        <h2 class="section-title">Request Custom Orders</h2>
+        <p class="lead">
+          A playful spin on our brand—eight petals dancing in perfect harmony,
+          just like the flavors that inspire us. <br>
+          Watch it twirl while you dream up your next sweet treat!
+        </p>
+      </div>
 
-<!-- Testimonials Section -->
-<section class="py-5 testimonials-section text-center">
-    <div class="container">
-        <h2 class="section-title">What Our Clients Say</h2>
-        <div id="testimonials-container" class="row g-4">
-            <!-- Testimonials will be dynamically inserted here -->
+      <!-- Right : Spinning Rose -->
+      <div class="col-lg-6 text-center">
+        <div class="rose-spinner mx-lg-auto">
+          <div class="rose">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
         </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
+
+
+<div class="shape-trim flip"></div>
+
+<!-- Feature Cards -->
+<section class="py-5 feature-section">
+  <div class="container">
+
+    <!-- Card 1 : image on the RIGHT -->
+    <article class="feature-card img-left mb-5 d-lg-flex align-items-center flex-lg-row-reverse">
+      <img src="images/frontPageCookies/pinkRose-removebg-preview.png"
+           class="cookie-img me-lg-4 mb-3 mb-lg-0 feature-card__img--right"
+           alt="Cookies">
+      <div class="flex-grow-1 text-center text-lg-start">
+        <h3 class="feature-title mb-3">Card Title One</h3>
+        <p class="lead mb-0">A short description goes here so visitors know what this highlight is about.</p>
+      </div>
+    </article>
+
+    <!-- Card 2 : image on the LEFT (flipped) -->
+<article class="feature-card img-right mb-5 d-lg-flex align-items-center flex-lg-row-reverse">
+  <img src="images/frontPageCookies/strawberryOreoTop-removebg-preview.png"
+       class="cookie-img ms-lg-4 mb-3 mb-lg-0 feature-card__img--right"
+       alt="Cookies">
+  <div class="flex-grow-1 text-center text-lg-start">
+    <h3 class="feature-title mb-3">Card Title Two</h3>
+    <p class="lead mb-0">Swap the image side just by reversing row-order and using the right-image helpers.</p>
+  </div>
+</article>
+
+    <!-- Card 3 : image on the RIGHT -->
+    <article class="feature-card img-left mb-5 d-lg-flex align-items-center flex-lg-row-reverse">
+      <img src="images/frontPageCookies/redRose-removebg-preview.png"
+           class="cookie-img me-lg-4 mb-3 mb-lg-0 feature-card__img--right"
+           alt="Cookies">
+      <div class="flex-grow-1 text-center text-lg-start">
+        <h3 class="feature-title mb-3">Card Title Three</h3>
+        <p class="lead mb-0">Another placeholder blurb. Make each card as long or short as you need.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<div class="shape-trim"></div>
 
     <!-- Contact Section -->
-    <section class="py-5 bg-dark text-white text-center">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <p class="fs-5 mb-1">Csilla Szentpeteri</p>
-            <p class="fs-5 mb-1">📞 <a href="tel:8472462400" class="text-white">847-246-2400</a></p>
-            <p class="fs-5 mb-1">📍 Bensenville</p>
-            <p class="fs-5 mb-3">✉️ <a href="mailto:sweetrosesandmore@yahoo.com"
-                    class="text-white">sweetrosesandmore@yahoo.com</a></p>
-            <div>
-                <a href="https://www.facebook.com/share/18kTqZhcQh/?mibextid=wwXIfr" target="_blank"
-                    class="btn btn-primary m-1">Facebook</a>
-                <a href="https://instagram.com/sweet_roses_and_more" target="_blank"
-                    class="btn btn-primary m-1">Instagram</a>
-            </div>
-        </div>
-    </section>
+<section id="contact" class="contact-section bg-white">
+  <div class="container">
+    <div class="row gy-4 align-items-center">
+
+      <!-- Left column : owner + address -->
+      <div class="col-lg-6 text-center text-lg-start">
+        <h2 class="section-title mb-3">Contact&nbsp;Us</h2>
+        <p class="fs-5 mb-1 fw-semibold">Csilla&nbsp;Szentpeteri</p>
+        <p class="fs-5 mb-1">📍 Bensenville, IL</p>
+        <p class="fs-5 mb-0">
+          📞 <a href="tel:8472462400">847-246-2400</a>
+        </p>
+        <p class="fs-5">
+          ✉️ <a href="mailto:sweetrosesandmore@yahoo.com">sweetrosesandmore@yahoo.com</a>
+        </p>
+      </div>
+
+      <!-- Right column : social buttons -->
+      <div class="col-lg-6 text-center text-lg-start">
+        <h3 class="h5 fw-bold mb-3">Follow Us</h3>
+        <a href="https://www.facebook.com/share/18kTqZhcQh/?mibextid=wwXIfr"
+           target="_blank"
+           class="btn btn-primary me-2 mb-2" style="color: #333333">
+          Facebook
+        </a>
+        <a href="https://instagram.com/sweet_roses_and_more"
+           target="_blank"
+           class="btn btn-primary mb-2" style="color: #333333">
+          Instagram
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- Footer -->
     <footer class="py-3 text-center" style="background-color: var(--color-footer);">
@@ -135,8 +206,6 @@
     <script src="scripts/main.js"></script>
     <!-- Load cookies dynamically -->
     <script src="scripts/cookies.js"></script>
-    <!-- Load testimonials dynamically -->
-    <script src="scripts/testimonials.js"></script>
 </body>
 
 </html>
