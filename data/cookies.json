@@ -20,6 +20,13 @@
             "img": "images/cookies/cookie3.jpg",
             "description": "Celebrate birthdays with our colorful and delicious cookies.",
             "tags": ["birthday", "party", "custom"]
+        },
+{
+            "id": "C003",
+            "name": "Birthday Cookie Set",
+            "img": "images/cookies/cookie3.jpg",
+            "description": "Celebrate birthdays with our colorful and delicious cookies.",
+            "tags": ["birthday", "party", "custom"]
         }
     ]
 }

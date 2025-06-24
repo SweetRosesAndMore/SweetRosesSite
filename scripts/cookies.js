@@ -1,44 +1,62 @@
-document.addEventListener("DOMContentLoaded", () => {
-    fetch("data/cookies.json") // adjust path if needed
-        .then(response => response.json())
-        .then(data => {
-            window.allCookies = data.cookies; // Save globally
-            renderCookies(data.cookies);
-        })
-        .catch(error => console.error("Error loading cookies:", error));
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('../data/cookies.json')
+    .then(r => r.json())
+    .then(data => {
+      window.allCookies = data.cookies;
+      renderCookies(allCookies);           // render first 12
+      toggleShowMore();                    // decide if button visible
+    })
+    .catch(err => console.error('Error:', err));
 });
 
-// Render cookies to the DOM
-function renderCookies(cookies) {
-    const container = document.getElementById("cookies-container");
-    container.innerHTML = cookies.map(cookie => `
-        <div class="col-sm-6 col-lg-4">
-            <div class="box text-center">
-                <div class="img-box">
-                    <img src="${cookie.img}" alt="${cookie.name}">
-                </div>
-                <div class="detail-box">
-                    <h5>${cookie.name}</h5>
-                </div>
-            </div>
+/* -------  CONFIG  ------- */
+const START_COUNT = 12;   // 4 × 3 teaser
+/* ------------------------ */
+
+function renderCookies(list){
+  const container = document.getElementById('cookies-container');
+  container.innerHTML = list.map(c => `
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="box text-center">
+        <div class="img-box">
+          <img src="${c.img}" alt="${c.name}">
         </div>
-    `).join("");
+        <div class="detail-box">
+          <h5>${c.name}</h5>
+        </div>
+      </div>
+    </div>
+  `).join('');
 }
 
-// Search handler
-document.getElementById("cookie-search-btn").addEventListener("click", () => {
-    const query = document.getElementById("cookie-search").value.trim().toLowerCase();
-    const filtered = window.allCookies.filter(cookie => 
-        cookie.id.toLowerCase().includes(query) ||
-        cookie.name.toLowerCase().includes(query) ||
-        cookie.tags.some(tag => tag.toLowerCase().includes(query))
-    );
-    renderCookies(filtered);
+/* ----  Search  ---- */
+document.getElementById('cookie-search-btn').addEventListener('click', runSearch);
+document.getElementById('cookie-search').addEventListener('keypress', e => {
+  if(e.key==='Enter'){ runSearch(); }
 });
 
-// Optional: Enter key triggers search
-document.getElementById("cookie-search").addEventListener("keypress", (e) => {
-    if (e.key === "Enter") {
-        document.getElementById("cookie-search-btn").click();
-    }
+function runSearch(){
+  const q = document.getElementById('cookie-search').value.trim().toLowerCase();
+  const result = window.allCookies.filter(c =>
+    c.id.toLowerCase().includes(q) ||
+    c.name.toLowerCase().includes(q) ||
+    c.tags.some(t => t.toLowerCase().includes(q))
+  );
+  renderCookies(result);
+  document.getElementById('show-more-btn').classList.add('d-none');   // hide button on search
+}
+
+/* ----  Show-More  ---- */
+const btn = document.getElementById('show-more-btn');
+btn.addEventListener('click', () => {
+  renderCookies(allCookies);            // show everything
+  btn.classList.add('d-none');          // hide button
 });
+
+function toggleShowMore(){
+  if(window.allCookies.length > START_COUNT){
+    // render only the first 12 then reveal button
+    renderCookies(window.allCookies.slice(0, START_COUNT));
+    btn.classList.remove('d-none');
+  }
+}

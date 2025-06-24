@@ -68,10 +68,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: var(--color-accent-hover);
-  text-decoration: underline;
-}
 
 /* Buttons */
 .btn-primary {
@@ -109,7 +105,7 @@ footer {
   height:2px;
   width:0;
   background:var(--color-accent);
-  transition:width .25s ease;
+
 }
 .custom-navbar .nav-link:hover::after,
 .custom-navbar .nav-link.active::after{

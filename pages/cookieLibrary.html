@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sweet Roses and More</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/card.css">
+</head>
+
+<body>
+
+    <!-- Navbar (matches index) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../images/logoNoBG.png" alt="Sweet Roses & More" height="40" class="me-2">
+                <span class="fw-bold" style="color:#333">Sweet&nbsp;Roses&nbsp;&amp;&nbsp;More</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active"
+                            href="cookieLibrary.html">All&nbsp;Our&nbsp;Cookies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="customOrder.html">Custom&nbsp;Order</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero header -->
+    <header class="hero-section py-5">
+        <div class="container text-center">
+            <h1 class="display-5 fw-bold">All Our Cookies</h1>
+            <p class="lead">Browse every flavour, theme and custom design we’ve created—then dream up your own!</p>
+        </div>
+    </header>
+
+
+    <!-- Search + grid -->
+    <section class="py-5 feature-section">
+        <div class="container">
+
+            <!-- search bar -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <input id="cookie-search" class="form-control" placeholder="Search by name, tag or ID…">
+                        <button id="cookie-search-btn" class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- responsive grid -->
+            <div id="cookies-container" class="row g-4"></div>
+
+            <div class="text-center mt-4">
+                <button id="show-more-btn" class="btn btn-outline-primary d-none">Show&nbsp;More</button>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="shape-trim"></div>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section bg-white">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+
+                <!-- Left column : owner + address -->
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h2 class="section-title mb-3">Contact&nbsp;Us</h2>
+                    <p class="fs-5 mb-1 fw-semibold">Csilla&nbsp;Szentpeteri</p>
+                    <p class="fs-5 mb-1">📍 Bensenville, IL</p>
+                    <p class="fs-5 mb-0">
+                        📞 <a href="tel:8472462400">847-246-2400</a>
+                    </p>
+                    <p class="fs-5">
+                        ✉️ <a href="mailto:sweetrosesandmore@yahoo.com">sweetrosesandmore@yahoo.com</a>
+                    </p>
+                </div>
+
+                <!-- Right column : social buttons -->
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h3 class="h5 fw-bold mb-3">Follow Us</h3>
+                    <a href="https://www.facebook.com/share/18kTqZhcQh/?mibextid=wwXIfr" target="_blank"
+                        class="btn btn-primary me-2 mb-2" style="color: #333333">
+                        Facebook
+                    </a>
+                    <a href="https://instagram.com/sweet_roses_and_more" target="_blank" class="btn btn-primary mb-2"
+                        style="color: #333333">
+                        Instagram
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="py-3 text-center" style="background:var(--color-footer);">
+        &copy; 2025 Sweet Roses &amp; More | All Rights Reserved
+    </footer>
+
+    <!-- Bootstrap bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Cookie loader -->
+    <script src="../scripts/cookies.js"></script>
+</body>
+
+</html>
