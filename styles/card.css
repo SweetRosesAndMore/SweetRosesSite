@@ -72,3 +72,60 @@
 @media (max-width:575.98px){
   /* nothing extra needed – image already in normal flow */
 }
+
+
+/* -----------------------------------------------------------
+   FEATURE-CARD  – hover lift + cookie “bleed”
+----------------------------------------------------------- */
+.feature-card{
+  position:relative;
+  overflow:visible;                               /* cookie escapes */
+  transition:transform .28s ease, box-shadow .28s ease;
+}
+@media (hover:hover){
+  .feature-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 36px rgba(0,0,0,.18);
+  }
+}
+
+/* cookie always above the shine */
+.cookie-img{ z-index:5; }                         /* ⬆  top layer   */
+
+/* -----------------------------------------------------------
+   SHINE (pink gleam) – the tiny wrapper that clips the stripe
+----------------------------------------------------------- */
+.shine{
+  position:absolute;
+  inset:0;
+  border-radius:2rem;                             
+  overflow:hidden;                                /* clips gradient */
+  z-index:1;          /* ← bumped ABOVE the card text             */
+  pointer-events:none;
+}
+
+/* animated gradient stripe */
+.shine::before{
+  content:'';
+  position:absolute;
+  top:0; left:0%;
+  width:50%; height:100%;
+  background:linear-gradient(120deg,
+              transparent 0%,
+              rgba(247,138,154,.45) 40%,
+              rgba(247,138,154,.85) 50%,
+              rgba(247,138,154,.45) 60%,
+              transparent 100%);
+  transform:skewX(-25deg);
+  opacity:0;
+}
+
+.feature-card:hover .shine::before{
+  animation:shineSweep .7s ease-in-out forwards;
+}
+
+@keyframes shineSweep{
+  0%   { transform:translateX(-120%) skewX(-25deg); opacity:0; }
+  25%  { opacity:1; }
+  100% { transform:translateX(220%)  skewX(-25deg); opacity:0; }
+}
