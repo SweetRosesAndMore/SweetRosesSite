@@ -1,212 +1,74 @@
-/* -------------------------------------------------
-   COOKIE CARD – uniform size, curved image,
-   white border + hover “lift”
-   -------------------------------------------------*/
-#cookies-container .box{
-  --card-w: 240px;          /* side length  */
-  --border: 12px;           /* thickness    */
-  --radius: 30px;           /* curve amount */
+/* =========================================================
+   Featured Cookie Cards  (index.html only)
+   ========================================================= */
 
-  position:relative;
-  width:var(--card-w);
-  height:var(--card-w);
-  margin:0 auto;
-  background:#fff;
-  border:var(--border) solid #fff;
-  border-radius:var(--radius);
-  box-shadow:0 6px 16px rgba(0,0,0,.12);
-
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  overflow:hidden;          /* clip the image corners */
-
-  transition:transform .25s ease, box-shadow .25s ease;
-}
-
-/*  “lift” on hover  */
-#cookies-container .box:hover{
-  transform:translateY(-10px);
-  box-shadow:0 12px 24px rgba(0,0,0,.18);
-}
-
-/* IMAGE takes upper 70 % of card */
-#cookies-container .img-box{
-  flex:0 0 70%;
-  width:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  overflow:hidden;           /* round the image edges by clipping */
-}
-
-#cookies-container .img-box img{
-  max-width:80%;
-  max-height:100%;
-  object-fit:contain;
-  border-radius:calc(var(--radius) - var(--border)); /* keeps curves consistent */
-}
-
-/* title area */
-#cookies-container .detail-box{
-  flex:1;
-  width:100%;
-  padding:.5rem 1rem 1rem;
-}
-
-#cookies-container .detail-box h5{
-  font-size:1rem;
-  font-weight:600;
-  margin:0;
-  color:var(--color-accent, #fa3551);
-}
-
-/* Feature cards */
-.feature-card {
-  position: relative;
-  background: #fff;
-  border-radius: 2rem;          /* big sweeping corners */
-  padding: 3rem 2rem;
-  box-shadow: 0 12px 25px rgba(0,0,0,.1);
-  overflow: visible;            /* let the cookie hang out */
-}
-
-.feature-title {
-  color: var(--color-accent);
-  font-weight: 700;
-}
-
-/* Cookie image */
-.cookie-img{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(-15deg);  /* centered + tilt */
-  width: 320px;      /* larger than card for drama */
-  max-width: none;
-  z-index: 2;
-}
-
-/* when the image sits on the right side */
-.feature-card__img--right{
-  right: -90px;                      /* spill past the right edge */
-  transform: translateY(-50%) rotate(15deg);
-}
-
-/* when the image sits on the left */
-.feature-card__img--left{
-  left: -90px;                       /* spill past the left edge */
-}
-
-/* Smooth responsiveness */
-@media (max-width: 991.98px) {  /* lg breakpoint */
-  .cookie-img {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-/* Pink backdrop the roses can bleed into */
+/* ---- Section backdrop so roses can “bleed” outside cards ---- */
 .feature-section{
-  background: var(--color-bg-main);   /* #fad2d2  - already defined */
-  overflow: visible;                  /* let images escape the container */
+  background:var(--clr-bg-main);   /* soft pink from style.css   */
+  overflow:visible;
 }
 
-/* ------------------------------
-   1.  Base   (mobile-first)
-   ------------------------------ */
+/* ---- Card shell ---- */
+.feature-card{
+  position:relative;
+  background:#fff;
+  border-radius:2rem;
+  padding:3rem 2rem;
+  box-shadow:0 12px 25px rgba(0,0,0,.1);
+  overflow:visible;                /* let cookie hang out        */
+  min-height:260px;                /* keeps text from collapsing */
+}
+
+/* ---- Title inside card ---- */
+.feature-title{
+  color:var(--clr-accent);
+  font-weight:700;
+}
+
+/* -------------------------------------------------------------
+   Floating cookie image (the “rose” that bleeds out)
+   ------------------------------------------------------------- */
+
+/* Base (mobile-first) – image in normal flow, sits above text */
 .cookie-img{
-  position: relative;          /* back in flow on small screens   */
-  width: 180px;
-  margin: 0 auto 1.25rem;      /* centered above the text         */
-  transform: rotate(-10deg);
+  position:relative;
+  display:block;          /* ← NEW */
+  width:180px;
+  margin:0 auto 1.25rem;  /* now centres correctly */
+  transform:rotate(-10deg);
 }
 
-.img-right .cookie-img{
-  transform: rotate(10deg);
-}
+/* When author wants tilt to the opposite side */
+.img-right .cookie-img{ transform:rotate(10deg); }
 
-/* ------------------------------
-   2.  Desktop / large-screen
-   ------------------------------ */
-@media (min-width: 992px){      /* matches Bootstrap lg */
-  
-  /* make the rose float */
+/* ---------- Desktop ≥992 px: image floats out of card ---------- */
+@media (min-width:992px){
   .cookie-img{
-    position: absolute;
-    top: 50%;
-    width: 320px;
-    max-width: none;
-    transform: translateY(-50%) rotate(-15deg);
-    margin: 0;                 /* override the mobile margin */
-    z-index: 2;
+    position:absolute;
+    top:50%; left:auto; right:auto;
+    width:320px; max-width:none;
+    transform:translateY(-50%) rotate(-15deg);
+    margin:0;
   }
   .img-right .cookie-img{
-    transform: translateY(-50%) rotate(15deg);
+    right:-100px;
+    transform:translateY(-50%) rotate(15deg);
+  }
+  .img-left .cookie-img{
+    left:-100px;
   }
 
-  /* give the text block breathing room */
-  .feature-card{
-    min-height: 260px;         /* ensures enough vertical space   */
-    padding: 3rem 2rem;        /* default (mobile) padding        */
-  }
-  .feature-card.img-left{      /* image hanging LEFT  → pad left */
-    padding-left: 240px;       /* ≈ (img width 320 – overlap 80) */
-  }
-  .feature-card.img-right{     /* image hanging RIGHT → pad right */
-    padding-right: 240px;
-  }
-
-  /* nudge the image off the card edge for the “bleed” */
-  .img-left  .cookie-img{ left:  -100px; }
-  .img-right .cookie-img{ right: -100px; }
+  /* text padding so it doesn’t sit under the image */
+  .feature-card.img-left{  padding-left:240px; }
+  .feature-card.img-right{ padding-right:240px; }
 }
 
-/* (optional) tighten tablet view so it doesn’t feel cramped */
-@media (min-width: 768px) and (max-width: 991.98px){
-  .cookie-img{ width: 220px; }
+/* ---------- Tablet fine-tuning ---------- */
+@media (min-width:768px) and (max-width:991.98px){
+  .cookie-img{ width:220px; }
 }
 
-/* ░░ 1.  Phones (<576 px) – let each card fill its column ░░ */
+/* ---------- Small phones: ensure no layout shift ---------- */
 @media (max-width:575.98px){
-  #cookies-container .box{
-    --card-w:100%;            /* card spans full column width  */
-    height:auto;              /* card height now grows with content */
-    border-width:8px;
-  }
-
-  /* fixed thumbnail window */
-  #cookies-container .img-box{
-    flex:0 0 auto;
-    height:150px;             /* ► set the same height for all */
-  }
-
-  #cookies-container .img-box img{
-    width:100%;
-    height:100%;
-    object-fit:cover;         /* ► crop + fill, keeps mix tidy */
-    object-position:center;   /* center the crop */
-  }
+  /* nothing extra needed – image already in normal flow */
 }
-
-/* ░░ 2.  Tablets (≥576 px) – restore the square card ░░ */
-@media (min-width:576px){
-  #cookies-container .box{
-    --card-w:240px;
-    height:var(--card-w);
-  }
-
-  /* reset img-box so square aspect works again */
-  #cookies-container .img-box{
-    flex:0 0 70%;             /* original 70 % of the square */
-    height:auto;
-  }
-
-  #cookies-container .img-box img{
-    width:auto;
-    height:100%;
-    object-fit:contain;       /* back to “fit inside” for squares */
-  }
-}
-
-
