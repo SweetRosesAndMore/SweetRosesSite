@@ -1,131 +1,193 @@
-/* =========================================================
-   Featured Cookie Cards  (index.html only)
-   ========================================================= */
-
-/* ---- Section backdrop so roses can “bleed” outside cards ---- */
-.feature-section{
-  background:var(--clr-bg-main);   /* soft pink from style.css   */
-  overflow:visible;
+/* Feature Section background */
+.feature-section {
+  background: var(--clr-bg-main);
+  overflow: visible;
 }
 
-/* ---- Card shell ---- */
-.feature-card{
-  position:relative;
-  background:#fff;
-  border-radius:2rem;
-  padding:3rem 2rem;
-  box-shadow:0 12px 25px rgba(0,0,0,.1);
-  overflow:visible;                /* let cookie hang out        */
-  min-height:260px;                /* keeps text from collapsing */
+/* Main cookie grid cards (library view) */
+#cookies-container .box {
+  --card-size: 240px;
+  --border: 12px;
+  --radius: 30px;
+  width: var(--card-size);
+  height: var(--card-size);
+  margin: 0 auto;
+  background: #fff;
+  border: var(--border) solid #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
 }
 
-/* ---- Title inside card ---- */
-.feature-title{
-  color:var(--clr-accent);
-  font-weight:700;
+#cookies-container .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
 }
 
-/* -------------------------------------------------------------
-   Floating cookie image (the “rose” that bleeds out)
-   ------------------------------------------------------------- */
-
-/* Base (mobile-first) – image in normal flow, sits above text */
-.cookie-img{
-  position:relative;
-  display:block;          /* ← NEW */
-  width:180px;
-  margin:0 auto 1.25rem;  /* now centres correctly */
-  transform:rotate(-10deg);
+#cookies-container .img-box {
+  flex: 0 0 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* When author wants tilt to the opposite side */
-.img-right .cookie-img{ transform:rotate(10deg); }
+#cookies-container .img-box img {
+  max-width: 80%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: calc(var(--radius) - var(--border));
+}
 
-/* ---------- Desktop ≥992 px: image floats out of card ---------- */
-@media (min-width:992px){
-  .cookie-img{
-    position:absolute;
-    top:50%; left:auto; right:auto;
-    width:320px; max-width:none;
-    transform:translateY(-50%) rotate(-15deg);
-    margin:0;
-  }
-  .img-right .cookie-img{
-    right:-100px;
-    transform:translateY(-50%) rotate(15deg);
-  }
-  .img-left .cookie-img{
-    left:-100px;
+@media (max-width: 575.98px) {
+  #cookies-container .box {
+    --card-size: 100%;
+    height: auto;
+    border-width: 8px;
   }
 
-  /* text padding so it doesn’t sit under the image */
-  .feature-card.img-left{  padding-left:240px; }
-  .feature-card.img-right{ padding-right:240px; }
-}
+  #cookies-container .img-box {
+    height: 150px;
+  }
 
-/* ---------- Tablet fine-tuning ---------- */
-@media (min-width:768px) and (max-width:991.98px){
-  .cookie-img{ width:220px; }
-}
-
-/* ---------- Small phones: ensure no layout shift ---------- */
-@media (max-width:575.98px){
-  /* nothing extra needed – image already in normal flow */
-}
-
-
-/* -----------------------------------------------------------
-   FEATURE-CARD  – hover lift + cookie “bleed”
------------------------------------------------------------ */
-.feature-card{
-  position:relative;
-  overflow:visible;                               /* cookie escapes */
-  transition:transform .28s ease, box-shadow .28s ease;
-}
-@media (hover:hover){
-  .feature-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 18px 36px rgba(0,0,0,.18);
+  #cookies-container .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
-/* cookie always above the shine */
-.cookie-img{ z-index:5; }                         /* ⬆  top layer   */
-
-/* -----------------------------------------------------------
-   SHINE (pink gleam) – the tiny wrapper that clips the stripe
------------------------------------------------------------ */
-.shine{
-  position:absolute;
-  inset:0;
-  border-radius:2rem;                             
-  overflow:hidden;                                /* clips gradient */
-  z-index:1;          /* ← bumped ABOVE the card text             */
-  pointer-events:none;
+@media (min-width: 576px) {
+  #cookies-container .img-box {
+    height: auto;
+  }
 }
 
-/* animated gradient stripe */
-.shine::before{
-  content:'';
-  position:absolute;
-  top:0; left:0%;
-  width:50%; height:100%;
-  background:linear-gradient(120deg,
-              transparent 0%,
-              rgba(247,138,154,.45) 40%,
-              rgba(247,138,154,.85) 50%,
-              rgba(247,138,154,.45) 60%,
-              transparent 100%);
-  transform:skewX(-25deg);
-  opacity:0;
+/* Feature Cards (index.html only) */
+
+.feature-card {
+  position: relative;
+  background: #fff;
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  min-height: 260px;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
 }
 
-.feature-card:hover .shine::before{
-  animation:shineSweep .7s ease-in-out forwards;
+@media (hover: hover) {
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+  }
 }
 
-@keyframes shineSweep{
-  0%   { transform:translateX(-120%) skewX(-25deg); opacity:0; }
-  25%  { opacity:1; }
-  100% { transform:translateX(220%)  skewX(-25deg); opacity:0; }
+.feature-title {
+  color: var(--clr-accent);
+  font-weight: 700;
+}
+
+/* Floating Cookie Image (mobile default) */
+.cookie-img {
+  position: relative;
+  display: block;
+  width: 180px;
+  margin: 0 auto 1.25rem;
+  transform: rotate(-10deg);
+  z-index: 5;
+}
+
+/* Reverse tilt option */
+.img-right .cookie-img {
+  transform: rotate(10deg);
+}
+
+/* Desktop floating position */
+@media (min-width: 992px) {
+  .cookie-img {
+    position: absolute;
+    top: 50%;
+    width: 320px;
+    transform: translateY(-50%) rotate(-15deg);
+    margin: 0;
+    max-width: none;
+  }
+
+  .img-right .cookie-img {
+    right: -100px;
+    transform: translateY(-50%) rotate(15deg);
+  }
+
+  .img-left .cookie-img {
+    left: -100px;
+  }
+
+  .feature-card.img-left {
+    padding-left: 240px;
+  }
+
+  .feature-card.img-right {
+    padding-right: 240px;
+  }
+}
+
+/* Tablet fine-tune */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .cookie-img {
+    width: 220px;
+  }
+}
+
+/* Shine Animation */
+.shine {
+  position: absolute;
+  inset: 0;
+  border-radius: 2rem;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(247, 138, 154, 0.45) 40%,
+    rgba(247, 138, 154, 0.85) 50%,
+    rgba(247, 138, 154, 0.45) 60%,
+    transparent 100%
+  );
+  transform: skewX(-25deg);
+  opacity: 0;
+}
+
+.feature-card:hover .shine::before {
+  animation: shineSweep 0.7s ease-in-out forwards;
+}
+
+@keyframes shineSweep {
+  0% {
+    transform: translateX(-120%) skewX(-25deg);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(220%) skewX(-25deg);
+    opacity: 0;
+  }
 }

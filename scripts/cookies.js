@@ -1,49 +1,80 @@
-/* =========================================================
-   Sweet Roses & More  •  Cookie Library
-   ========================================================= */
+/* Configuration */
+const JSON_URL = "../data/cookies.json";
+const START_COUNT = 12;
 
-/* ---- CONFIG ---- */
-const JSON_URL    = "../data/cookies.json";  // relative to cookieLibrary.html
-const START_COUNT = 12;                      // 4 × 3 teaser grid
-/* ---------------- */
+let allCookies = [];  // flat list (each item keeps .category)
+let categories = [];  // e.g., ['babyShower','christmas', …]
+let activeCat = "all";  // current category filter
 
-let allCookies = [];   // flattened master list
+const searchInput = document.getElementById("cookie-search");
+const showMoreBtn = document.getElementById("show-more-btn");
 
-
-function shuffle(array){
-  for(let i=array.length-1; i>0; i--){
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
-/* 1 ─ Fetch & flatten by category */
+/* Load & Prepare Data */
 document.addEventListener("DOMContentLoaded", () => {
   fetch(JSON_URL)
-    .then(r => r.json())
-    .then(data => {
-      allCookies = Object.entries(data.cookies).flatMap(
-        ([category, arr]) => arr.map(item => ({ ...item, category }))
+    .then((r) => r.json())
+    .then((data) => {
+      allCookies = Object.entries(data.cookies).flatMap(([cat, arr]) =>
+        arr.map((item) => ({ ...item, category: cat }))
       );
 
-      shuffle(allCookies);
+      categories = Object.keys(data.cookies);
+      buildFilterButtons(categories);
 
+      shuffle(allCookies);
       renderCookies(allCookies.slice(0, START_COUNT));
       toggleShowMore();
     })
-    .catch(err => console.error("Cookie-JSON error:", err));
+    .catch((err) => console.error("Cookie-JSON error:", err));
 });
 
-/* 2 ─ Render cards */
+/* Filter Buttons */
+function buildFilterButtons(cats) {
+  const wrap = document.getElementById("filter-wrap");
+
+  let html = `<button class="btn btn-primary btn-sm filter-btn active" data-cat="all">
+                All&nbsp;(${allCookies.length})
+              </button>`;
+
+  html += cats.map(c => `
+    <button class="btn btn-primary btn-sm filter-btn" data-cat="${c}">
+      ${niceLabel(c)}&nbsp;(${allCookies.filter(x => x.category === c).length})
+    </button>
+  `).join('');
+
+  wrap.innerHTML = html;
+
+  wrap.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.addEventListener("click", () => applyFilter(btn.dataset.cat, btn));
+  });
+}
+
+function applyFilter(cat, clickedBtn) {
+  activeCat = cat;
+  wrapActive(clickedBtn);
+
+  const pool = cat === "all" ? allCookies : allCookies.filter(c => c.category === cat);
+  renderCookies(pool.slice(0, START_COUNT));
+  toggleShowMore(pool.length);
+  resetSearch();
+}
+
+function wrapActive(btn) {
+  document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+}
+
+function niceLabel(str) {
+  return str.replace(/([A-Z])/g, " $1").replace(/^./, m => m.toUpperCase());
+}
+
+/* Cookie Grid Rendering */
 function renderCookies(list) {
   const grid = document.getElementById("cookies-container");
 
   grid.innerHTML = list.map(c => `
     <div class="col-6 col-md-4 col-lg-3">
-      <div class="box text-center cursor-pointer"
-           data-img="${c.img}"
-            data-desc="">
+      <div class="box text-center cursor-pointer" data-img="${c.img}" data-desc="">
         <div class="img-box">
           <img src="${c.img}" alt="Cookie">
         </div>
@@ -51,71 +82,75 @@ function renderCookies(list) {
     </div>
   `).join("");
 
-  attachModalEvents();          // 🔸 add click listeners each time we re-render
+  attachModalEvents();
 }
 
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 
-/* 3 ─ LIVE SEARCH (description + image path) */
-const searchInput  = document.getElementById('cookie-search');
-const showMoreBtn  = document.getElementById('show-more-btn');
+/* Modal Setup */
+function attachModalEvents() {
+  const modalEl = document.getElementById("cookieModal");
+  const cookieModal = bootstrap.Modal.getOrCreateInstance(modalEl);
+  const modalImg = document.getElementById("modalImg");
+  const modalDesc = document.getElementById("modalDesc");
 
-let debounceTimer  = null;
+  document.querySelectorAll("#cookies-container .box").forEach(box => {
+    box.addEventListener("click", () => {
+      modalImg.src = box.dataset.img;
+      modalDesc.textContent = box.dataset.desc || "";
+      modalDesc.classList.toggle("d-none", !box.dataset.desc);
+      cookieModal.show();
+    });
+  });
+}
 
-searchInput.addEventListener('input', () => {
+/* Live Search */
+let debounceTimer = null;
+
+searchInput.addEventListener("input", () => {
   clearTimeout(debounceTimer);
-  debounceTimer = setTimeout(runSearch, 150);   // 150 ms debounce
+  debounceTimer = setTimeout(runSearch, 150);
 });
 
 function runSearch() {
   const q = searchInput.value.trim().toLowerCase();
+  const base = activeCat === "all" ? allCookies : allCookies.filter(c => c.category === activeCat);
 
-  /* empty box → restore teaser view + show-more btn */
   if (!q) {
-    renderCookies(allCookies.slice(0, START_COUNT));
-    toggleShowMore();
+    renderCookies(base.slice(0, START_COUNT));
+    toggleShowMore(base.length);
     return;
   }
 
-  /* filter by description OR img path */
-  const result = allCookies.filter(c =>
+  const result = base.filter(c =>
     c.description.toLowerCase().includes(q) ||
     c.img.toLowerCase().includes(q)
   );
 
   renderCookies(result);
-  showMoreBtn.classList.add('d-none');          // hide button while searching
+  showMoreBtn.classList.add("d-none");
 }
 
-/* 4 ─ Show-More button (unchanged) */
-showMoreBtn.addEventListener('click', () => {
+function resetSearch() {
+  searchInput.value = "";
+}
+
+/* Show More Button */
+showMoreBtn.addEventListener("click", () => {
   renderCookies(allCookies);
-  showMoreBtn.classList.add('d-none');
+  showMoreBtn.classList.add("d-none");
 });
 
-function toggleShowMore() {
-  if (allCookies.length > START_COUNT) {
-    showMoreBtn.classList.remove('d-none');
+function toggleShowMore(poolSize = allCookies.length) {
+  if (poolSize > START_COUNT) {
+    showMoreBtn.classList.remove("d-none");
   } else {
-    showMoreBtn.classList.add('d-none');
+    showMoreBtn.classList.add("d-none");
   }
-}
-/* --------------------------------------------------
-   Attach modal click handlers after every render
-   --------------------------------------------------*/
-function attachModalEvents(){
-  const modalEl   = document.getElementById('cookieModal');
-  const cookieModal = bootstrap.Modal.getOrCreateInstance(modalEl);
-  const modalImg  = document.getElementById('modalImg');
-  const modalDesc = document.getElementById('modalDesc');
-
-  document
-    .querySelectorAll('#cookies-container .box')
-    .forEach(box => {
-      box.addEventListener('click', () => {
-        modalImg.src = box.dataset.img;
-        modalDesc.textContent = box.dataset.desc || '';
-        modalDesc.classList.toggle('d-none', !box.dataset.desc);
-        cookieModal.show();
-      });
-    });
 }

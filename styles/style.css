@@ -1,168 +1,190 @@
-/* =========================================================
-   Sweet Roses & More · Global Styles
-   ========================================================= */
+:root {
+  --color-bg-main: #fad2d2;
+  --color-text-main: #333333;
+  --color-accent: #f78a9a;
+  --color-accent-hover: #ac4e5c;
+  --color-footer: #222;
+  --color-button-main: #f78a9a;
+  --color-button-hover: #ac4e5c;
+  --hero-bg-start: #fff;
+  --hero-bg-end: #fad2d2;
+  --trim-colour: #fff;
 
-/* ---------- CSS Variables ---------- */
-:root{
-  /* ── Primary palette (original names) ─────────────────── */
-  --color-bg-main:        #fad2d2;
-  --color-text-main:      #333333;
-  --color-accent:         #f78a9a;
-  --color-accent-hover:   #ac4e5c;
-  --color-footer:         #222;
-  --color-button-main:    #f78a9a;
-  --color-button-hover:   #ac4e5c;
-
-  /* ── Functional extras that pages reference ───────────── */
-  --hero-bg-start:        #fff;      /* lightest top of gradient */
-  --hero-bg-end:          #fad2d2;   /* bottom of gradient       */
-  --trim-colour:          #fff;      /* small scallop wave       */
-
-  /* ── Aliases for the cleaned-up CSS (clr-*) ───────────── */
-  --clr-bg-main:          var(--color-bg-main);
-  --clr-text-main:        var(--color-text-main);
-  --clr-accent:           var(--color-accent);
-  --clr-accent-hover:     var(--color-accent-hover);
-  --clr-footer:           var(--color-footer);
-  --clr-btn-main:         var(--color-button-main);
-  --clr-btn-hover:        var(--color-button-hover);
+  --clr-bg-main: var(--color-bg-main);
+  --clr-text-main: var(--color-text-main);
+  --clr-accent: var(--color-accent);
+  --clr-accent-hover: var(--color-accent-hover);
+  --clr-footer: var(--color-footer);
+  --clr-btn-main: var(--color-button-main);
+  --clr-btn-hover: var(--color-button-hover);
 }
 
-/* ---------- Base ---------- */
-html{ scroll-behavior:smooth; }          /* nicety */
-body{
-  font-family: "Segoe UI","Helvetica Neue",sans-serif;
-  color:var(--clr-text-main);
-  background:var(--clr-bg-main);
+html {
+  scroll-behavior: smooth;
 }
 
-a{
-  color:var(--clr-accent);
-  text-decoration:none;
-}
-a:hover{ color:var(--clr-accent-hover); }
-
-/* ---------- Headings ---------- */
-.section-title{
-  color:var(--clr-accent);
-  font-size:2rem;
-  font-weight:600;
-  margin-bottom:1.5rem;
+body {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  color: var(--clr-text-main);
+  background: var(--clr-bg-main);
 }
 
-/* ---------- Buttons ---------- */
-.btn-primary{
-  --bs-btn-bg:          var(--clr-btn-main);
-  --bs-btn-border-color:var(--clr-btn-main);
-  --bs-btn-hover-bg:    var(--clr-btn-hover);
-  --bs-btn-hover-border-color:var(--clr-btn-hover);
+a {
+  color: var(--clr-accent);
+  text-decoration: none;
 }
 
-/* ---------- Hero ---------- */
-.hero-section{
-  padding:4rem 1rem;
+a:hover {
+  color: var(--clr-accent-hover);
 }
-.hero-section h1{ color:var(--clr-accent); font-size:2.5rem; font-weight:700; }
-.hero-section p { font-size:1.25rem; }
 
-/* ---------- Navbar ---------- */
-.custom-navbar .navbar-nav .nav-link{
-  color:var(--clr-text-main);
-  font-weight:600;
-  transition:color .2s;
+.section-title {
+  color: var(--clr-accent);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
+
+/* Buttons */
+.btn-primary {
+  --bs-btn-bg: var(--clr-btn-main);
+  --bs-btn-border-color: var(--clr-btn-main);
+  --bs-btn-hover-bg: var(--clr-btn-hover);
+  --bs-btn-hover-border-color: var(--clr-btn-hover);
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: var(--clr-btn-hover) !important;
+  border-color: var(--clr-btn-hover) !important;
+  box-shadow: none !important;
+}
+
+.filter-btn,
+.btn {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hero */
+.hero-section {
+  padding: 4rem 1rem;
+}
+
+.hero-section h1 {
+  color: var(--clr-accent);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+}
+
+/* Navbar */
+.custom-navbar .navbar-nav .nav-link {
+  color: var(--clr-text-main);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
 .custom-navbar .nav-link:hover,
-.custom-navbar .nav-link.active{
-  color:var(--clr-accent);
+.custom-navbar .nav-link.active {
+  color: var(--clr-accent);
 }
 
-/* subtle underline */
-.custom-navbar .nav-link::after{
-  content:''; display:block; height:2px; width:0;
-  background:var(--clr-accent); transition:width .2s;
+.custom-navbar .nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: var(--clr-accent);
+  transition: width 0.2s;
 }
+
 .custom-navbar .nav-link:hover::after,
-.custom-navbar .nav-link.active::after{ width:100%; }
+.custom-navbar .nav-link.active::after {
+  width: 100%;
+}
 
-/* ---------- Wavy Trim ---------- */
-.shape-trim{
-  height:24px;
-  background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 24'%3E%3Cpath fill='%23FFFFFF' d='M0 24C10 0 20 0 30 24C40 0 50 0 60 24H0Z'/%3E%3C/svg%3E")
+/* Trim Wave */
+.shape-trim {
+  height: 24px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 24'%3E%3Cpath fill='%23FFFFFF' d='M0 24C10 0 20 0 30 24C40 0 50 0 60 24H0Z'/%3E%3C/svg%3E")
     repeat-x center bottom/60px 24px;
 }
-.shape-trim.flip{ transform:scaleY(-1); }
 
-/* ---------- Contact ---------- */
-.contact-section{
-  padding:4rem 0;
+.shape-trim.flip {
+  transform: scaleY(-1);
 }
-.contact-section a:hover{ text-decoration:none; }
 
-@media (min-width:992px){
-  .contact-section .col-lg-6:first-child{
-    border-right:1px solid rgba(0,0,0,.08);
+/* Contact */
+.contact-section {
+  padding: 4rem 0;
+}
+
+.contact-section a:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  .contact-section .col-lg-6:first-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
   }
 }
 
-/* ---------- Footer ---------- */
-footer{ background:var(--clr-footer); color:#fff; }
-.site-footer a{ color:inherit; text-decoration:underline; }
-.site-footer a:hover{ color:var(--clr-accent-hover); }
-
-/* =========================================================
-   Cookie Card Grid
-   ========================================================= */
-
-/* base card */
-#cookies-container .box{
-  --card-size:240px;
-  --border:12px;
-  --radius:30px;
-
-  width:var(--card-size);
-  height:var(--card-size);
-  margin:0 auto;
-  background:#fff;
-  border:var(--border) solid #fff;
-  border-radius:var(--radius);
-  box-shadow:0 6px 16px rgba(0,0,0,.12);
-  display:flex; flex-direction:column; justify-content:center; align-items:center;
-  overflow:hidden;
-  transition:transform .25s, box-shadow .25s;
-}
-#cookies-container .box:hover{
-  transform:translateY(-10px);
-  box-shadow:0 12px 24px rgba(0,0,0,.18);
+/* Footer */
+footer {
+  background: var(--clr-footer);
+  color: #fff;
 }
 
-/* image wrapper */
-#cookies-container .img-box{
-  flex:0 0 70%;
-  width:100%; display:flex; justify-content:center; align-items:center;
-}
-#cookies-container .img-box img{
-  max-width:80%; max-height:100%; object-fit:contain;
-  border-radius:calc(var(--radius) - var(--border));
+.site-footer a {
+  color: inherit;
+  text-decoration: underline;
 }
 
-/* ---------- Mobile tweaks (<576 px) ---------- */
-@media (max-width:575.98px){
-  #cookies-container .box{
-    --card-size:100%;
-    height:auto; border-width:8px;
-  }
-  #cookies-container .img-box{ height:150px; }
-  #cookies-container .img-box img{
-    width:100%; height:100%; object-fit:cover; object-position:center;
+.site-footer a:hover {
+  color: var(--clr-accent-hover);
+}
+
+/* Filter buttons */
+.filter-wrap {
+  gap: 0.5rem;
+}
+
+@media (max-width: 575.98px) {
+  .filter-wrap {
+    justify-content: flex-start;
   }
 }
 
-/* ---------- Restore square on ≥sm ---------- */
-@media (min-width:576px){
-  #cookies-container .img-box{ height:auto; }
+.filter-btn {
+  --bs-btn-padding-y: 0.3rem;
+  --bs-btn-padding-x: 0.85rem;
+  --bs-btn-font-size: 0.8rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex: 0 0 auto;
+  color: var(--clr-accent);
+  border-color: var(--clr-accent);
+  background: #fff;
+  transition: background 0.15s, color 0.15s;
 }
 
-/* =========================================================
-   (extra component rules can follow below)
-   ========================================================= */
+.filter-btn:hover {
+  background: var(--clr-accent);
+  color: #fff;
+}
+
+.filter-btn.active,
+.filter-btn.active:hover {
+  background: var(--clr-accent-hover);
+  border-color: var(--clr-accent-hover);
+  color: #fff;
+}
+
+.filter-btn:focus-visible {
+  box-shadow: 0 0 0 3px rgba(247, 138, 154, 0.35);
+  outline: none;
+}
