@@ -167,4 +167,46 @@
   .cookie-img{ width: 220px; }
 }
 
+/* ░░ 1.  Phones (<576 px) – let each card fill its column ░░ */
+@media (max-width:575.98px){
+  #cookies-container .box{
+    --card-w:100%;            /* card spans full column width  */
+    height:auto;              /* card height now grows with content */
+    border-width:8px;
+  }
+
+  /* fixed thumbnail window */
+  #cookies-container .img-box{
+    flex:0 0 auto;
+    height:150px;             /* ► set the same height for all */
+  }
+
+  #cookies-container .img-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;         /* ► crop + fill, keeps mix tidy */
+    object-position:center;   /* center the crop */
+  }
+}
+
+/* ░░ 2.  Tablets (≥576 px) – restore the square card ░░ */
+@media (min-width:576px){
+  #cookies-container .box{
+    --card-w:240px;
+    height:var(--card-w);
+  }
+
+  /* reset img-box so square aspect works again */
+  #cookies-container .img-box{
+    flex:0 0 70%;             /* original 70 % of the square */
+    height:auto;
+  }
+
+  #cookies-container .img-box img{
+    width:auto;
+    height:100%;
+    object-fit:contain;       /* back to “fit inside” for squares */
+  }
+}
+
 

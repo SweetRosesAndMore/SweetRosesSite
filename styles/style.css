@@ -159,3 +159,11 @@ footer {
     border-right:1px solid rgba(0,0,0,.08);
   }
 }
+
+.site-footer a{
+  color:inherit;               /* same colour as text */
+  text-decoration:underline;   /* or 'none' if you prefer */
+}
+.site-footer a:hover{
+  color:var(--color-accent-hover);
+}

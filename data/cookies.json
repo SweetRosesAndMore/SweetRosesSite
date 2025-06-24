@@ -64,7 +64,7 @@
         "description": "A marshmallow snowman cookie, perfect for the holiday season."
       },
       {
-        "img": "../images/cookies/christmas/marshSnowBite.jpeg",
+        "img": "../images/cookies/christmas/singleSnowBite.jpeg",
         "description": "A bite-sized marshmallow snowman cookie, ideal for festive snacking."
       },
       {
@@ -212,15 +212,11 @@
         "description": "A themed graduation cookie."
       },
       {
-        "img": "../images/cookies/graduation/gradBubbleSix.jpeg",
+        "img": "../images/cookies/graduation/graduationBubbleSix.jpeg",
         "description": "A six-pack of bubble graduation cookies."
       }
     ],
     "mothersDay": [
-      {
-        "img": "../images/cookies/mothersDay/mothersDayCookie.jpeg",
-        "description": "A cookie meant for Mother's Day, beautifully decorated."
-      },
       {
         "img": "../images/cookies/mothersDay/md_Leaf.jpeg",
         "description": "A leaf-shaped cookie, perfect for Mother's Day."
@@ -246,7 +242,7 @@
     ],
     "roses": [
       {
-        "img": "../images/cookies/roses/orePinkSingle.jpeg",
+        "img": "../images/cookies/roses/oreoPinkSingle.jpeg",
         "description": "A single pink Oreo cookie shaped like a rose."
       },
       {
