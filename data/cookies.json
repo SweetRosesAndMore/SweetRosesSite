@@ -1,32 +1,346 @@
 {
-    "cookies": [
-        {
-            "id": "C001",
-            "name": "Hello Spring Cookie Set",
-            "img": "images/cookies/cookie1.jpg",
-            "description": "Hand-decorated sugar cookies perfect for spring celebrations.",
-            "tags": ["spring", "holiday", "gift"]
-        },
-        {
-            "id": "C002",
-            "name": "Baby Shower Cookies",
-            "img": "images/cookies/cookie2.jpg",
-            "description": "Custom cookie designs for your baby shower or gender reveal.",
-            "tags": ["baby", "shower", "event"]
-        },
-        {
-            "id": "C003",
-            "name": "Birthday Cookie Set",
-            "img": "images/cookies/cookie3.jpg",
-            "description": "Celebrate birthdays with our colorful and delicious cookies.",
-            "tags": ["birthday", "party", "custom"]
-        },
-{
-            "id": "C003",
-            "name": "Birthday Cookie Set",
-            "img": "images/cookies/cookie3.jpg",
-            "description": "Celebrate birthdays with our colorful and delicious cookies.",
-            "tags": ["birthday", "party", "custom"]
-        }
+  "cookies": {
+    "babyShower": [
+      {
+        "img": "../images/cookies/babyShower/babyStarGroup.jpeg",
+        "description": "A delightful assortment of baby shower cookies, perfect for celebrating new arrivals."
+      },
+      {
+        "img": "../images/cookies/babyShower/bearIcePops.jpeg",
+        "description": "Cute bear-shaped ice pop cookies, perfect for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/bearPops.jpeg",
+        "description": "Cute bear-shaped cookies, perfect for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/bibBaby.jpeg",
+        "description": "Bib baby cookies, ideal for a baby shower celebration."
+      },
+      {
+        "img": "../images/cookies/babyShower/bibOrange.jpeg",
+        "description": "Orange bib cookies, perfect for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/bottleAndBib.jpeg",
+        "description": "Bottle and bib cookies, a great addition to any baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/bottleAndBibOrange.jpeg",
+        "description": "Orange bottle and bib cookies, a fun addition to any baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/bottleOrange.jpeg",
+        "description": ""
+      },
+      {
+        "img": "../images/cookies/babyShower/comboBearPops.jpeg",
+        "description": "A delightful combination of bear-shaped cookies on a stick."
+      },
+      {
+        "img": "../images/cookies/babyShower/groupBaby.jpeg",
+        "description": "A group of adorable baby-themed cookies, perfect for any celebration."
+      },
+      {
+        "img": "../images/cookies/babyShower/poemBaby.jpeg",
+        "description": "A sweet poem about babies, beautifully decorated on a cookie."
+      }
+    ],
+    "christmas": [
+      {
+        "img": "../images/cookies/christmas/christmasCocoaNarrow.jpeg",
+        "description": "A narrow cookie featuring festive cocoa designs."
+      },
+      {
+        "img": "../images/cookies/christmas/christmasCocoaTop.jpeg",
+        "description": "A top view of a cookie adorned with Christmas cocoa themes."
+      },
+      {
+        "img": "../images/cookies/christmas/christmasCocoaWide.jpeg",
+        "description": "A wide cookie featuring festive cocoa designs."
+      },
+      {
+        "img": "../images/cookies/christmas/marshSnowman.jpeg",
+        "description": "A marshmallow snowman cookie, perfect for the holiday season."
+      },
+      {
+        "img": "../images/cookies/christmas/marshSnowBite.jpeg",
+        "description": "A bite-sized marshmallow snowman cookie, ideal for festive snacking."
+      },
+      {
+        "img": "../images/cookies/christmas/snowBites.jpeg",
+        "description": "Delicious snowman-shaped cookie bites, perfect for sharing."
+      },
+      {
+        "img": "../images/cookies/christmas/snowMarsh.jpeg",
+        "description": "A delightful snowman marshmallow treat, perfect for the holidays."
+      }
+    ],
+    "decorative": [
+      {
+        "img": "../images/cookies/decorative/animalPopBunch.jpeg",
+        "description": "A bunch of adorable animal-shaped cake pops."
+      },
+      {
+        "img": "../images/cookies/decorative/applePopBunch.jpeg",
+        "description": "A delightful bunch of apple-shaped cake pops."
+      },
+      {
+        "img": "../images/cookies/decorative/applePopsOnPlate.jpeg",
+        "description": "Apple-shaped cake pops beautifully arranged on a plate."
+      },
+      {
+        "img": "../images/cookies/decorative/butterflyCakePop.jpeg",
+        "description": "A charming butterfly-shaped cake pop, perfect for any occasion."
+      },
+      {
+        "img": "../images/cookies/decorative/dinoOreo.jpeg",
+        "description": "A delightful dinosaur-themed Oreo cookie."
+      },
+      {
+        "img": "../images/cookies/decorative/dinosaurPop.jpeg",
+        "description": "A fun dinosaur-shaped cake pop, great for kids."
+      },
+      {
+        "img": "../images/cookies/decorative/doveCakePop.jpeg",
+        "description": "A beautiful dove-shaped cake pop, symbolizing peace."
+      },
+      {
+        "img": "../images/cookies/decorative/iceCreamCakePop.jpeg",
+        "description": "A delightful ice cream cone cake pop, perfect for summer."
+      },
+      {
+        "img": "../images/cookies/decorative/pinkCakePops.jpeg",
+        "description": "A bunch of charming pink cake pops."
+      },
+      {
+        "img": "../images/cookies/decorative/pinkWhiteBows.jpeg",
+        "description": "Adorable pink and white bow-shaped cake pops."
+      },
+      {
+        "img": "../images/cookies/decorative/pretzelBunch.jpeg",
+        "description": "A delightful bunch of pretzel-shaped cake pops."
+      },
+      {
+        "img": "../images/cookies/decorative/redApplePretzelStickBunch.jpeg",
+        "description": "A fun bunch of red apple-shaped pretzel sticks."
+      },
+      {
+        "img": "../images/cookies/decorative/sharkPopClose.jpeg",
+        "description": "A close-up of a shark-themed cake pop."
+      },
+      {
+        "img": "../images/cookies/decorative/sharkPopFar.jpeg",
+        "description": "A distant view of a shark-themed cake pop."
+      },
+      {
+        "img": "../images/cookies/decorative/silverCrossLot.jpeg",
+        "description": "A lot of silver cross-shaped cookies, perfect for religious occasions."
+      },
+      {
+        "img": "../images/cookies/decorative/silverCrossSingle.jpeg",
+        "description": "A single silver cross-shaped cookie, ideal for individual servings."
+      },
+      {
+        "img": "../images/cookies/decorative/singleApplePopEdited.jpeg",
+        "description": "An edited image of a single apple-shaped cake pop."
+      },
+      {
+        "img": "../images/cookies/decorative/singleApplePopUnedited.jpeg",
+        "description": "An unedited image of a single apple-shaped cake pop."
+      },
+      {
+        "img": "../images/cookies/decorative/starCakePop.jpeg",
+        "description": "A charming star-shaped cake pop, perfect for celebrations."
+      },
+      {
+        "img": "../images/cookies/decorative/strawberryBiteOreo.jpeg",
+        "description": "A delightful strawberry-flavored Oreo cookie."
+      },
+      {
+        "img": "../images/cookies/decorative/strawberryOreoGroup.jpeg",
+        "description": "A group of strawberry-flavored Oreo cookies."
+      },
+      {
+        "img": "../images/cookies/decorative/strawberryOreoTop.jpeg",
+        "description": "A top view of a strawberry-flavored Oreo cookie."
+      },
+      {
+        "img": "../images/cookies/decorative/volleyballCookie.jpeg",
+        "description": "A fun volleyball-themed cookie."
+      },
+      {
+        "img": "../images/cookies/decorative/whiteGoldFlower.jpeg",
+        "description": "A beautiful white and gold flower-shaped cookie."
+      }
+    ],
+    "fall": [
+      {
+        "img": "../images/cookies/fall/fallLeavesCookie.jpeg",
+        "description": "A colorful fall leaves-themed cookie."
+      }
+    ],
+    "fourthOfJuly": [
+      {
+        "img": "../images/cookies/fourthOfJuly/flagBiteCookie.jpeg",
+        "description": "A bite-sized American flag cookie."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/flagCookies.jpeg",
+        "description": "A set of American flag cookies."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/flagStickPretzels.jpeg",
+        "description": "A bunch of pretzel sticks decorated like American flags."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/usaCookies.jpeg",
+        "description": "A collection of USA-themed cookies."
+      }
+    ],
+    "graduation": [
+      {
+        "img": "../images/cookies/graduation/gradCookies.jpeg",
+        "description": "A set of graduation-themed cookies."
+      },
+      {
+        "img": "../images/cookies/graduation/gradHat.jpeg",
+        "description": "A graduation cap-shaped cookie."
+      },
+      {
+        "img": "../images/cookies/graduation/graduationBubbleFour.jpeg",
+        "description": "A themed graduation cookie."
+      },
+      {
+        "img": "../images/cookies/graduation/gradBubbleSix.jpeg",
+        "description": "A six-pack of bubble graduation cookies."
+      }
+    ],
+    "mothersDay": [
+      {
+        "img": "../images/cookies/mothersDay/mothersDayCookie.jpeg",
+        "description": "A cookie meant for Mother's Day, beautifully decorated."
+      },
+      {
+        "img": "../images/cookies/mothersDay/md_Leaf.jpeg",
+        "description": "A leaf-shaped cookie, perfect for Mother's Day."
+      },
+      {
+        "img": "../images/cookies/mothersDay/motherDayCookiesSix.jpeg",
+        "description": "A six-pack of Mother's Day-themed cookies."
+      }
+    ],
+    "paintYourOwn": [
+      {
+        "img": "../images/cookies/paintYourOwn/paintBunny.jpeg",
+        "description": "A paint-your-own bunny cookie kit."
+      },
+      {
+        "img": "../images/cookies/paintYourOwn/paintCookies.jpeg",
+        "description": "A paint-your-own cookie kit with various designs."
+      },
+      {
+        "img": "../images/cookies/paintYourOwn/unicornPaint.jpeg",
+        "description": "A paint-your-own unicorn cookie kit."
+      }
+    ],
+    "roses": [
+      {
+        "img": "../images/cookies/roses/orePinkSingle.jpeg",
+        "description": "A single pink Oreo cookie shaped like a rose."
+      },
+      {
+        "img": "../images/cookies/roses/oreoRedSingle.jpeg",
+        "description": "A single red Oreo cookie shaped like a rose."
+      },
+      {
+        "img": "../images/cookies/roses/pinkRose.jpeg",
+        "description": "A pink rose-shaped cookie."
+      },
+      {
+        "img": "../images/cookies/roses/redRose.jpeg",
+        "description": "A red rose-shaped cookie."
+      },
+      {
+        "img": "../images/cookies/roses/roseBunch.jpeg",
+        "description": "A bunch of rose-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/roses/roseCakePops.jpeg",
+        "description": "A set of rose-shaped cake pops."
+      },
+      {
+        "img": "../images/cookies/roses/roseCakePopsLargeAngle.jpeg",
+        "description": "A large angle view of rose-shaped cake pops."
+      },
+      {
+        "img": "../images/cookies/roses/roseOreoBunch.jpeg",
+        "description": "A bunch of rose-shaped Oreo cookies."
+      },
+      {
+        "img": "../images/cookies/roses/rosePretzel.jpeg",
+        "description": "A pretzel shaped like a rose."
+      },
+      {
+        "img": "../images/cookies/roses/rosesAndMore.jpeg",
+        "description": "A collection of rose-themed treats."
+      },
+      {
+        "img": "../images/cookies/roses/threeRedRoses.jpeg",
+        "description": "A trio of red rose-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/roses/threeRoseCookies.jpeg",
+        "description": "A set of three rose-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/roses/threeRoses.jpeg",
+        "description": "A collection of three rose-shaped cookies."
+      }
+    ],
+    "union": [
+      {
+        "img": "../images/cookies/union/blackYellowTwentyOne.jpeg",
+        "description": "A black and yellow themed cookie."
+      },
+      {
+        "img": "../images/cookies/union/doubleOreoNewYear.jpeg",
+        "description": "A double stuffed Oreo cookie for New Year."
+      },
+      {
+        "img": "../images/cookies/union/fifteenCakePops.jpeg",
+        "description": "A set of fifteen cake pops."
+      },
+      {
+        "img": "../images/cookies/union/fifteenCookies.jpeg",
+        "description": "A set of fifteen cookies."
+      },
+      {
+        "img": "../images/cookies/union/newYearPopBows.jpeg",
+        "description": "A set of New Year-themed pop bows."
+      },
+      {
+        "img": "../images/cookies/union/newYearPretzel.jpeg",
+        "description": "A pretzel shaped like a firework."
+      },
+      {
+        "img": "../images/cookies/union/quadOreoNewYear.jpeg",
+        "description": "A quad-stuffed Oreo cookie for New Year."
+      },
+      {
+        "img": "../images/cookies/union/singleOreoNewYear.jpeg",
+        "description": "A single stuffed Oreo cookie for New Year."
+      }
+    ],
+    "valentine": [
+      {
+        "img": "../images/cookies/valentine/loveValBundle.jpeg",
+        "description": "A bundle of love-themed cookies."
+      },
+      {
+        "img": "../images/cookies/valentine/valentineBundle.jpeg",
+        "description": "A collection of Valentine's Day-themed cookies."
+      }
     ]
+  }
 }
