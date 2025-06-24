@@ -1,148 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sweet Roses and More</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sweet Roses and More</title>
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="../images/favicon/site.webmanifest">
-    <link rel="shortcut icon" href="../images/favicon/favicon.ico">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../images/favicon/site.webmanifest">
+  <link rel="shortcut icon" href="../images/favicon/favicon.ico">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/card.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/card.css">
 </head>
+
 <body>
 
-<!-- ▾ NAVBAR (same as cookie page) -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top custom-navbar">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="../index.html">
-      <img src="../images/logoNoBG.png" height="40" class="me-2" alt="">
-      <span class="fw-bold" style="color:#333">Sweet&nbsp;Roses&nbsp;&amp;&nbsp;More</span>
-    </a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div id="mainNav" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link"          href="../index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link"          href="cookieLibrary.html">All&nbsp;Our&nbsp;Cookies</a></li>
-        <li class="nav-item"><a class="nav-link active"   href="customOrder.html">Custom&nbsp;Order</a></li>
-      </ul>
+  <!-- ▾ NAVBAR (same as cookie page) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="../images/logoNoBG.png" height="40" class="me-2" alt="">
+        <span class="fw-bold" style="color:#333">Sweet Roses More</span>
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="cookieLibrary.html">All Our Cookies</a></li>
+          <li class="nav-item"><a class="nav-link active" href="customOrder.html">Custom Order</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- ▾ HERO -->
-<header class="hero-section py-5">
-  <div class="container text-center">
-    <h1 class="display-5 fw-bold">Custom Cookie Order</h1>
-    <p class="lead">Tell us exactly what you’re craving—shapes, flavours, colours &amp; quantity—and we’ll bake it fresh.</p>
-  </div>
-</header>
+  <!-- ▾ HERO -->
+  <header class="hero-section py-5">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold">Custom Cookie Order</h1>
+      <p class="lead">Tell us exactly what you’re craving—shapes, flavours, colours quantity—and we will make it!
+        fresh.</p>
+    </div>
+  </header>
 
-<div class="shape-trim"></div>
+  <div class="shape-trim"></div>
 
-<!-- ▾ ORDER FORM -->
-<section class="py-5 feature-section bg-white">
-  <div class="container" style="max-width:720px">
+  <!-- ▾ ORDER FORM -->
+  <section class="py-5 feature-section bg-white">
+    <div class="container" style="max-width:720px">
 
-    <form id="orderForm" class="row g-4 shadow-sm p-4 rounded-4" style="background-color: #fad2d2">
+      <form id="orderForm" class="row g-4 shadow-sm p-4 rounded-4" style="background-color: #fad2d2">
 
-      <h2 class="section-title text-center mb-3">Request a Cookie</h2>
+        <h2 class="section-title text-center mb-3">Request a Cookie</h2>
 
-      <div class="col-md-6">
-        <label class="form-label fw-semibold">Your Name</label>
-        <input class="form-control" type="text" name="from_name" required>
-      </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold">Your Name</label>
+          <input class="form-control" type="text" name="from_name" required>
+        </div>
 
-      <div class="col-md-6">
-        <label class="form-label fw-semibold">E-mail</label>
-        <input class="form-control" type="email" name="reply_to" required>
-      </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold">E-mail</label>
+          <input class="form-control" type="email" name="reply_to" required>
+        </div>
 
-      <div class="col-md-6">
-        <label class="form-label fw-semibold">Phone (optional)</label>
-        <input class="form-control" type="tel" name="phone">
-      </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold">Phone (optional)</label>
+          <input class="form-control" type="tel" name="phone">
+        </div>
 
-      <div class="col-md-6">
-        <label class="form-label fw-semibold">Desired Date</label>
-        <input class="form-control" type="date" name="need_by">
-      </div>
+        <div class="col-md-6">
+          <label class="form-label fw-semibold">Desired Date</label>
+          <input class="form-control" type="date" name="need_by">
+        </div>
 
-      <div class="col-12">
-        <label class="form-label fw-semibold">Order Details<br><small class="text-muted">(cookie count, flavour, colours, theme, allergies…)</small></label>
-        <textarea class="form-control" rows="5" name="order_details" required></textarea>
-      </div>
+        <div class="col-12">
+          <label class="form-label fw-semibold">Order Details<br><small class="text-muted">(cookie count, flavour,
+              colours, theme, allergies…)</small></label>
+          <textarea class="form-control" rows="5" name="order_details" required></textarea>
+        </div>
 
-      <div class="col-12 text-center">
-        <button class="btn btn-primary px-5" type="submit">Send&nbsp;Request</button>
-        <div id="formStatus" class="mt-3 small"></div>
-      </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-primary px-5" type="submit">Send Request</button>
+          <div id="formStatus" class="mt-3 small"></div>
+        </div>
 
-    </form>
-  </div>
-</section>
+      </form>
+    </div>
+  </section>
 
 
-<!-- Footer -->
-<footer class="site-footer py-3">
-  <div class="container d-flex flex-column flex-md-row
+  <!-- Footer -->
+  <footer class="site-footer py-3">
+    <div class="container d-flex flex-column flex-md-row
               justify-content-between align-items-center">
 
-    <span class="footer-copy mb-2 mb-md-0">
-      &copy; 2025 Sweet Roses &amp; More&nbsp;|&nbsp;All Rights Reserved
-    </span>
+      <span class="footer-copy mb-2 mb-md-0">
+        &copy; 2025 Sweet Roses More | All Rights Reserved
+      </span>
 
-    <span class="footer-powered small">
-      Made by <a href="https://zentriky.com" target="_blank">Zentriky</a>
-    </span>
+      <span class="footer-powered small">
+        Made by <a href="https://zentriky.com" target="_blank">Zentriky</a>
+      </span>
 
-  </div>
-</footer>
+    </div>
+  </footer>
 
-<!-- ▾ SCRIPTS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- EmailJS SDK -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- Toast container -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastArea"></div>
 
-<script>
-/* ------------ EmailJS config ------------ */
-const SERVICE_ID  = 'YOUR_SERVICE_ID';
-const TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-const PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
+  <!-- ▾ SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-emailjs.init(PUBLIC_KEY);
+  <script>
+    /* ------------ EmailJS config ------------ */
+    const SERVICE_ID = 'YOUR_SERVICE_ID';
+    const TEMPLATE_ID = 'template_o7a1ugr';
+    const PUBLIC_KEY = '5b8-Ag4iRXl_7xsKu';
 
-/* ------------ Submit handler ------------ */
-const form  = document.getElementById('orderForm');
-const status = document.getElementById('formStatus');
+    emailjs.init(PUBLIC_KEY);
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  status.textContent = 'Sending…';
+    /* ------------ Submit handler with Toasts ------------ */
+    const form = document.getElementById('orderForm');
+    const toastArea = document.getElementById('toastArea');
 
-  emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form)
-    .then(() => {
-        status.textContent = 'Thank you! We’ll get back to you shortly.';
-        status.className = 'text-success';
-        form.reset();
-    })
-    .catch((err) => {
-        console.error(err);
-        status.textContent = 'Oops — something went wrong. Please try again.';
-        status.className = 'text-danger';
+    function showToast(message, isSuccess = true) {
+      // Build the toast element
+      const toast = document.createElement('div');
+      toast.className = `toast align-items-center text-bg-${isSuccess ? 'success' : 'danger'} border-0`;
+      toast.role = 'alert';
+      toast.ariaLive = 'assertive';
+      toast.ariaAtomic = 'true';
+      toast.innerHTML = `
+      <div class="d-flex">
+        <div class="toast-body">
+          ${message}
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>`;
+
+      // Append, show, then auto-dispose
+      toastArea.appendChild(toast);
+      const bsToast = bootstrap.Toast.getOrCreateInstance(toast, { delay: 4000 });
+      bsToast.show();
+
+      // Remove from DOM after it hides to avoid buildup
+      toast.addEventListener('hidden.bs.toast', () => toast.remove());
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form)
+        .then(() => {
+          showToast('Thank you! We’ll get back to you shortly.', true);
+          form.reset();
+        })
+        .catch((err) => {
+          console.error(err);
+          showToast('Oops — something went wrong. Please try again or reach out to us via Email', false);
+        });
     });
-});
-</script>
+
+  </script>
 </body>
+
 </html>
