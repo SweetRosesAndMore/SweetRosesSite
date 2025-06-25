@@ -387,33 +387,33 @@
         "description": "A set of Halloween-themed cookies."
       }
     ],
-    "newYearsEve": [
+    "newYears": [
       {
-        "img": "../images/cookies/newYearsEve/doubleOreoNewYear.jpeg",
+        "img": "../images/cookies/newYears/doubleOreoNewYear.jpeg",
         "description": "A double stuffed Oreo cookie for New Year."
       },
       {
-        "img": "../images/cookies/newYearsEve/newYearPopBows.jpeg",
+        "img": "../images/cookies/newYears/newYearPopBows.jpeg",
         "description": "A set of New Year-themed pop bows."
       },
       {
-        "img": "../images/cookies/newYearsEve/newYearPretzel.jpeg",
+        "img": "../images/cookies/newYears/newYearPretzel.jpeg",
         "description": "A pretzel shaped like a firework."
       },
       {
-        "img": "../images/cookies/newYearsEve/quadOreoNewYear.jpeg",
+        "img": "../images/cookies/newYears/quadOreoNewYear.jpeg",
         "description": "A quad-stuffed Oreo cookie for New Year."
       },
       {
-        "img": "../images/cookies/newYearsEve/singleOreoNewYear.jpeg",
+        "img": "../images/cookies/newYears/singleOreoNewYear.jpeg",
         "description": "A single stuffed Oreo cookie for New Year."
       },
       {
-        "img": "../images/cookies/newYearsEve/newYearsPops.jpeg",
+        "img": "../images/cookies/newYears/newYearsPops.jpeg",
         "description": "A set of New Year-themed cake pops."
       },
       {
-        "img": "../images/cookies/newYearsEve/goldAndSilverNewPops.jpeg",
+        "img": "../images/cookies/newYears/goldAndSilverNewPops.jpeg",
         "description": "A set of gold and silver New Year-themed cake pops."
       }
     ]
