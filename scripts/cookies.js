@@ -76,7 +76,7 @@ function renderCookies(list) {
     <div class="col-6 col-md-4 col-lg-3">
       <div class="box text-center cursor-pointer" data-img="${c.img}" data-desc="">
         <div class="img-box">
-          <img src="${c.img}" alt="Cookie">
+          <img src="${c.img}" alt="${c.description}">
         </div>
       </div>
     </div>

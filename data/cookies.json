@@ -74,6 +74,22 @@
       {
         "img": "../images/cookies/christmas/snowMarsh.jpeg",
         "description": "A delightful snowman marshmallow treat, perfect for the holidays."
+      },
+      {
+        "img": "../images/cookies/christmas/christmasSugarBunch.jpeg",
+        "description": "A bunch of festive sugar cookies, perfect for Christmas celebrations."
+      },
+      {
+        "img": "../images/cookies/christmas/christmasReindeer.jpeg",
+        "description": "A set of charming reindeer cookies, ideal for holiday celebrations."
+      },
+      {
+        "img": "../images/cookies/christmas/christmasBoxedCookies.jpeg",
+        "description": "A beautifully arranged box of Christmas-themed cookies."
+      },
+      {
+        "img": "../images/cookies/christmas/christmasSimpleCookies.jpeg",
+        "description": "A collection of simple yet festive Christmas cookies, perfect for any holiday gathering."
       }
     ],
     "decorative": [
@@ -178,6 +194,14 @@
       {
         "img": "../images/cookies/fall/fallLeavesCookie.jpeg",
         "description": "A colorful fall leaves-themed cookie."
+      },
+      {
+        "img": "../images/cookies/fall/fallBasket.jpeg",
+        "description": "A colorful fall basket-themed cookie."
+      },
+      {
+        "img": "../images/cookies/fall/fallCookiesBasket.jpeg",
+        "description": "A colorful fall cookies basket."
       }
     ],
     "fourthOfJuly": [
@@ -224,6 +248,10 @@
       {
         "img": "../images/cookies/mothersDay/motherDayCookiesSix.jpeg",
         "description": "A six-pack of Mother's Day-themed cookies."
+      },
+      {
+        "img": "../images/cookies/mothersDay/chocCoverCakeFlowers.jpeg",
+        "description": "A single of chocolate-covered cake flowers brownie."
       }
     ],
     "paintYourOwn": [
@@ -326,6 +354,14 @@
       {
         "img": "../images/cookies/union/singleOreoNewYear.jpeg",
         "description": "A single stuffed Oreo cookie for New Year."
+      },
+      {
+        "img": "../images/cookies/union/newYearsPops.jpeg",
+        "description": "A set of New Year-themed cake pops."
+      },
+      {
+        "img": "../images/cookies/union/goldAndSilverNewPops.jpeg",
+        "description": "A set of gold and silver New Year-themed cake pops."
       }
     ],
     "valentine": [
@@ -334,8 +370,48 @@
         "description": "A bundle of love-themed cookies."
       },
       {
+        "img": "../images/cookies/valentine/cookieWhiteHeart.jpeg",
+        "description": "A set of white heart-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/valentine/valentineBearCookie.jpeg",
+        "description": "A set of Valentine's Day bear-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/valentine/ValentineRiceKrispie.jpeg",
+        "description": "A set of Valentine's Day Rice Krispie treats."
+      },
+      {
         "img": "../images/cookies/valentine/valentineBundle.jpeg",
         "description": "A collection of Valentine's Day-themed cookies."
+      },
+      {
+        "img": "../images/cookies/valentine/valentineRoseRice.jpeg",
+        "description": "A set of Valentine's Day rose-shaped Rice Krispie treats."
+      }
+    ],
+    "summer": [
+      {
+        "img": "../images/cookies/summer/beachSugarCookie.jpeg",
+        "description": "A beach-themed sugar cookie, perfect for summer."
+      }
+    ],
+    "thanksgiving": [
+      {
+        "img": "../images/cookies/thanksgiving/thanksgivingCookies.jpeg",
+        "description": "A Thanksgiving-themed cookie, perfect for the holiday."
+      }
+    ],
+    "fathersDay": [
+      {
+        "img": "../images/cookies/fathersDay/fathersDayCookies.jpeg",
+        "description": "A set of Father's Day-themed cookies."
+      }
+    ],
+    "halloween": [
+      {
+        "img": "../images/cookies/halloween/halloweenCookies.jpeg",
+        "description": "A set of Halloween-themed cookies."
       }
     ]
   }
