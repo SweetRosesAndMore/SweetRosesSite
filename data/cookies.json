@@ -14,6 +14,74 @@
       {
         "img": "../images/cookies/birthdayParty/fifteenCakePops.jpeg",
         "description": "A set of fifteen cake pops."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/bdayUnicorn4.jpeg",
+        "description": "A unicorn-themed birthday cookie."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/happyBirthAryaFlamingo.jpeg",
+        "description": "A flamingo-themed birthday cookie."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/berryKata.jpeg",
+        "description": "A berry-themed birthday cookie."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/aryaSingleCookie.jpeg",
+        "description": "A single cookie featuring Arya as the name."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/aryaFlowerCookie.jpeg",
+        "description": "A flower-themed cookie featuring Arya."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/mermaidThree.jpeg",
+        "description": "A mermaid-themed birthday cookie."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/butterflyLollipop.jpeg",
+        "description": "A butterfly-shaped lollipop cookie."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/unicornCakePop.jpeg",
+        "description": "A unicorn-themed cake pop bundle."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/mermaidPretzels.jpeg",
+        "description": "Mermaid-themed pretzel cookies."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/unicornPopCookieBox.jpeg",
+        "description": "A unicorn-themed cookie box."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/SixteenFourCookie.jpeg",
+        "description": "A set of sixteen cookies for a four year old birthday party."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/planeCookies.jpeg",
+        "description": "A set of plane-themed cookies."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/stefanBalloons.jpeg",
+        "description": "A balloon-themed birthday cookie."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/constructionCookies.jpeg",
+        "description": "A construction-themed birthday cookie."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/beeLot.jpeg",
+        "description": "Bee themed cookie lot and bundle"
+      },
+      {
+        "img": "../images/cookies/birthdayParty/beeFour.jpeg",
+        "description": "A set of four bee-themed cookies."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/oneSunshineCookies.jpeg",
+        "description": "A sunshine-themed birthday cookies set."
       }
     ],
     "baptism": [],
@@ -360,6 +428,10 @@
       {
         "img": "../images/cookies/paintYourOwn/unicornPaint.jpeg",
         "description": "A paint-your-own unicorn cookie kit."
+      },
+      {
+        "img": "../images/cookies/paintYourOwn/paintYourOwnTurkey.jpeg",
+        "description": "A paint-your-own turkey cookie kit."
       }
     ],
     "roses": [
