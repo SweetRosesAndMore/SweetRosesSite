@@ -1,6 +1,59 @@
 {
   "cookies": {
-    "partyPackages": [],
+    "partyPackages": [
+      {
+        "img": "../images/cookies/partyPackages/appleBoxAllTypes.jpeg",
+        "description": "Apple box cookies with all types of designs. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/appleBundle.jpeg",
+        "description": "Apple bundle cookies with various designs. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/appleCookies.jpeg",
+        "description": "Apple cookies with fun designs. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/appleFour.jpeg",
+        "description": "Apple four cookies with unique designs. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/appleOfOurEye.jpeg",
+        "description": "Apple of our eye cookies with special designs. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/fifteenKrisp.jpeg",
+        "description": "Fifteen krisp cookies with delightful designs. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/goldFifteen.jpeg",
+        "description": "Gold fifteen cookies with luxurious designs. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/goldPops.jpeg",
+        "description": "Gold pops cookies with exquisite designs. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/goldSilvPops.jpeg",
+        "description": "Gold silver pops cookies with elegant designs. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/redPretzels.jpeg",
+        "description": "Red pretzel cookies with a festive touch. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/silverFifteen.jpeg",
+        "description": "Silver fifteen cookies with sophisticated designs. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/silvPops.jpeg",
+        "description": "Silver pops cookies with a touch of elegance. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/sugarFifteen.jpeg",
+        "description": "Sugar fifteen cookies with sweet designs. Party package"
+      }
+    ],
     "logoCookies": [
       {
         "img": "../images/cookies/logoCookies/womenNet.jpeg",
