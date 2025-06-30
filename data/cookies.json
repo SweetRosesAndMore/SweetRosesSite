@@ -1,7 +1,48 @@
 {
   "cookies": {
     "partyPackages": [],
-    "logoCookies": [],
+    "logoCookies": [
+      {
+        "img": "../images/cookies/logoCookies/womenNet.jpeg",
+        "description": "a company logo cookie: Womans Network"
+      },
+      {
+        "img": "../images/cookies/logoCookies/missionPossible1.jpeg",
+        "description": "a company logo cookie: Mission Possible"
+      },
+      {
+        "img": "../images/cookies/logoCookies/missionPossible2.jpeg",
+        "description": "a company logo cookie: Mission Possible"
+      },
+      {
+        "img": "../images/cookies/logoCookies/happyPlanet.jpeg",
+        "description": "a company logo cookie: Happy Planet Gifts"
+      },
+      {
+        "img": "../images/cookies/logoCookies/kjakSingle.jpeg",
+        "description": "a company logo cookie: KJAK Single"
+      },
+      {
+        "img": "../images/cookies/logoCookies/kjakBundle.jpeg",
+        "description": "a company logo cookie: KJAK Bundle"
+      },
+      {
+        "img": "../images/cookies/logoCookies/unlimitedServiceGroup.jpeg",
+        "description": "a company logo cookie: Unlimited Service Group"
+      },
+      {
+        "img": "../images/cookies/logoCookies/illinois.jpeg",
+        "description": "a company logo cookie: Illinois"
+      },
+      {
+        "img": "../images/cookies/logoCookies/jadou.jpeg",
+        "description": "a company logo cookie: Jadou"
+      },
+      {
+        "img": "../images/cookies/logoCookies/meitheal.jpeg",
+        "description": "a company logo cookie: Meitheal"
+      }
+    ],
     "birthdayParty": [
       {
         "img": "../images/cookies/birthdayParty/blackYellowTwentyOne.jpeg",
