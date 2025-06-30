@@ -1,5 +1,22 @@
 {
   "cookies": {
+    "partyPackages": [],
+    "logoCookies": [],
+    "birthdayParty": [
+      {
+        "img": "../images/cookies/birthdayParty/blackYellowTwentyOne.jpeg",
+        "description": "A black and yellow themed cookie."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/fifteenCookies.jpeg",
+        "description": "A set of fifteen cookies."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/fifteenCakePops.jpeg",
+        "description": "A set of fifteen cake pops."
+      }
+    ],
+    "baptism": [],
     "babyShower": [
       {
         "img": "../images/cookies/babyShower/babyStarGroup.jpeg",
@@ -46,6 +63,91 @@
         "description": "A sweet poem about babies, beautifully decorated on a cookie."
       }
     ],
+    "firstCommunion": [],
+    "easter": [],
+    "graduation": [
+      {
+        "img": "../images/cookies/graduation/gradCookies.jpeg",
+        "description": "A set of graduation-themed cookies."
+      },
+      {
+        "img": "../images/cookies/graduation/gradHat.jpeg",
+        "description": "A graduation cap-shaped cookie."
+      },
+      {
+        "img": "../images/cookies/graduation/graduationBubbleFour.jpeg",
+        "description": "A themed graduation cookie."
+      },
+      {
+        "img": "../images/cookies/graduation/graduationBubbleSix.jpeg",
+        "description": "A six-pack of bubble graduation cookies."
+      }
+    ],
+    "teacherAppreciation": [],
+    "mothersDay": [
+      {
+        "img": "../images/cookies/mothersDay/md_Leaf.jpeg",
+        "description": "A leaf-shaped cookie, perfect for Mother's Day."
+      },
+      {
+        "img": "../images/cookies/mothersDay/motherDayCookiesSix.jpeg",
+        "description": "A six-pack of Mother's Day-themed cookies."
+      },
+      {
+        "img": "../images/cookies/mothersDay/chocCoverCakeFlowers.jpeg",
+        "description": "A single of chocolate-covered cake flowers brownie."
+      }
+    ],
+    "fathersDay": [
+      {
+        "img": "../images/cookies/fathersDay/fathersDayCookies.jpeg",
+        "description": "A set of Father's Day-themed cookies."
+      }
+    ],
+    "fourthOfJuly": [
+      {
+        "img": "../images/cookies/fourthOfJuly/flagBiteCookie.jpeg",
+        "description": "A bite-sized American flag cookie."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/flagCookies.jpeg",
+        "description": "A set of American flag cookies."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/flagStickPretzels.jpeg",
+        "description": "A bunch of pretzel sticks decorated like American flags."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/usaCookies.jpeg",
+        "description": "A collection of USA-themed cookies."
+      }
+    ],
+    "fall": [
+      {
+        "img": "../images/cookies/fall/fallLeavesCookie.jpeg",
+        "description": "A colorful fall leaves-themed cookie."
+      },
+      {
+        "img": "../images/cookies/fall/fallBasket.jpeg",
+        "description": "A colorful fall basket-themed cookie."
+      },
+      {
+        "img": "../images/cookies/fall/fallCookiesBasket.jpeg",
+        "description": "A colorful fall cookies basket."
+      }
+    ],
+    "halloween": [
+      {
+        "img": "../images/cookies/halloween/halloweenCookies.jpeg",
+        "description": "A set of Halloween-themed cookies."
+      }
+    ],
+    "thanksgiving": [
+      {
+        "img": "../images/cookies/thanksgiving/thanksgivingCookies.jpeg",
+        "description": "A Thanksgiving-themed cookie, perfect for the holiday."
+      }
+    ],
     "christmas": [
       {
         "img": "../images/cookies/christmas/christmasCocoaNarrow.jpeg",
@@ -90,6 +192,62 @@
       {
         "img": "../images/cookies/christmas/christmasSimpleCookies.jpeg",
         "description": "A collection of simple yet festive Christmas cookies, perfect for any holiday gathering."
+      }
+    ],
+    "newYears": [
+      {
+        "img": "../images/cookies/newYears/doubleOreoNewYear.jpeg",
+        "description": "A double stuffed Oreo cookie for New Year."
+      },
+      {
+        "img": "../images/cookies/newYears/newYearPopBows.jpeg",
+        "description": "A set of New Year-themed pop bows."
+      },
+      {
+        "img": "../images/cookies/newYears/newYearPretzel.jpeg",
+        "description": "A pretzel shaped like a firework."
+      },
+      {
+        "img": "../images/cookies/newYears/quadOreoNewYear.jpeg",
+        "description": "A quad-stuffed Oreo cookie for New Year."
+      },
+      {
+        "img": "../images/cookies/newYears/singleOreoNewYear.jpeg",
+        "description": "A single stuffed Oreo cookie for New Year."
+      },
+      {
+        "img": "../images/cookies/newYears/newYearsPops.jpeg",
+        "description": "A set of New Year-themed cake pops."
+      },
+      {
+        "img": "../images/cookies/newYears/goldAndSilverNewPops.jpeg",
+        "description": "A set of gold and silver New Year-themed cake pops."
+      }
+    ],
+    "valentine": [
+      {
+        "img": "../images/cookies/valentine/loveValBundle.jpeg",
+        "description": "A bundle of love-themed cookies."
+      },
+      {
+        "img": "../images/cookies/valentine/cookieWhiteHeart.jpeg",
+        "description": "A set of white heart-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/valentine/valentineBearCookie.jpeg",
+        "description": "A set of Valentine's Day bear-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/valentine/ValentineRiceKrispie.jpeg",
+        "description": "A set of Valentine's Day Rice Krispie treats."
+      },
+      {
+        "img": "../images/cookies/valentine/valentineBundle.jpeg",
+        "description": "A collection of Valentine's Day-themed cookies."
+      },
+      {
+        "img": "../images/cookies/valentine/valentineRoseRice.jpeg",
+        "description": "A set of Valentine's Day rose-shaped Rice Krispie treats."
       }
     ],
     "decorative": [
@@ -190,70 +348,6 @@
         "description": "A beautiful white and gold flower-shaped cookie."
       }
     ],
-    "fall": [
-      {
-        "img": "../images/cookies/fall/fallLeavesCookie.jpeg",
-        "description": "A colorful fall leaves-themed cookie."
-      },
-      {
-        "img": "../images/cookies/fall/fallBasket.jpeg",
-        "description": "A colorful fall basket-themed cookie."
-      },
-      {
-        "img": "../images/cookies/fall/fallCookiesBasket.jpeg",
-        "description": "A colorful fall cookies basket."
-      }
-    ],
-    "fourthOfJuly": [
-      {
-        "img": "../images/cookies/fourthOfJuly/flagBiteCookie.jpeg",
-        "description": "A bite-sized American flag cookie."
-      },
-      {
-        "img": "../images/cookies/fourthOfJuly/flagCookies.jpeg",
-        "description": "A set of American flag cookies."
-      },
-      {
-        "img": "../images/cookies/fourthOfJuly/flagStickPretzels.jpeg",
-        "description": "A bunch of pretzel sticks decorated like American flags."
-      },
-      {
-        "img": "../images/cookies/fourthOfJuly/usaCookies.jpeg",
-        "description": "A collection of USA-themed cookies."
-      }
-    ],
-    "graduation": [
-      {
-        "img": "../images/cookies/graduation/gradCookies.jpeg",
-        "description": "A set of graduation-themed cookies."
-      },
-      {
-        "img": "../images/cookies/graduation/gradHat.jpeg",
-        "description": "A graduation cap-shaped cookie."
-      },
-      {
-        "img": "../images/cookies/graduation/graduationBubbleFour.jpeg",
-        "description": "A themed graduation cookie."
-      },
-      {
-        "img": "../images/cookies/graduation/graduationBubbleSix.jpeg",
-        "description": "A six-pack of bubble graduation cookies."
-      }
-    ],
-    "mothersDay": [
-      {
-        "img": "../images/cookies/mothersDay/md_Leaf.jpeg",
-        "description": "A leaf-shaped cookie, perfect for Mother's Day."
-      },
-      {
-        "img": "../images/cookies/mothersDay/motherDayCookiesSix.jpeg",
-        "description": "A six-pack of Mother's Day-themed cookies."
-      },
-      {
-        "img": "../images/cookies/mothersDay/chocCoverCakeFlowers.jpeg",
-        "description": "A single of chocolate-covered cake flowers brownie."
-      }
-    ],
     "paintYourOwn": [
       {
         "img": "../images/cookies/paintYourOwn/paintBunny.jpeg",
@@ -322,99 +416,10 @@
         "description": "A collection of three rose-shaped cookies."
       }
     ],
-    "birthdayParty": [
-      {
-        "img": "../images/cookies/birthdayParty/blackYellowTwentyOne.jpeg",
-        "description": "A black and yellow themed cookie."
-      },
-      {
-        "img": "../images/cookies/birthdayParty/fifteenCookies.jpeg",
-        "description": "A set of fifteen cookies."
-      },
-      {
-        "img": "../images/cookies/birthdayParty/fifteenCakePops.jpeg",
-        "description": "A set of fifteen cake pops."
-      }
-      
-    ],
-    "valentine": [
-      {
-        "img": "../images/cookies/valentine/loveValBundle.jpeg",
-        "description": "A bundle of love-themed cookies."
-      },
-      {
-        "img": "../images/cookies/valentine/cookieWhiteHeart.jpeg",
-        "description": "A set of white heart-shaped cookies."
-      },
-      {
-        "img": "../images/cookies/valentine/valentineBearCookie.jpeg",
-        "description": "A set of Valentine's Day bear-shaped cookies."
-      },
-      {
-        "img": "../images/cookies/valentine/ValentineRiceKrispie.jpeg",
-        "description": "A set of Valentine's Day Rice Krispie treats."
-      },
-      {
-        "img": "../images/cookies/valentine/valentineBundle.jpeg",
-        "description": "A collection of Valentine's Day-themed cookies."
-      },
-      {
-        "img": "../images/cookies/valentine/valentineRoseRice.jpeg",
-        "description": "A set of Valentine's Day rose-shaped Rice Krispie treats."
-      }
-    ],
     "summer": [
       {
         "img": "../images/cookies/summer/beachSugarCookie.jpeg",
         "description": "A beach-themed sugar cookie, perfect for summer."
-      }
-    ],
-    "thanksgiving": [
-      {
-        "img": "../images/cookies/thanksgiving/thanksgivingCookies.jpeg",
-        "description": "A Thanksgiving-themed cookie, perfect for the holiday."
-      }
-    ],
-    "fathersDay": [
-      {
-        "img": "../images/cookies/fathersDay/fathersDayCookies.jpeg",
-        "description": "A set of Father's Day-themed cookies."
-      }
-    ],
-    "halloween": [
-      {
-        "img": "../images/cookies/halloween/halloweenCookies.jpeg",
-        "description": "A set of Halloween-themed cookies."
-      }
-    ],
-    "newYears": [
-      {
-        "img": "../images/cookies/newYears/doubleOreoNewYear.jpeg",
-        "description": "A double stuffed Oreo cookie for New Year."
-      },
-      {
-        "img": "../images/cookies/newYears/newYearPopBows.jpeg",
-        "description": "A set of New Year-themed pop bows."
-      },
-      {
-        "img": "../images/cookies/newYears/newYearPretzel.jpeg",
-        "description": "A pretzel shaped like a firework."
-      },
-      {
-        "img": "../images/cookies/newYears/quadOreoNewYear.jpeg",
-        "description": "A quad-stuffed Oreo cookie for New Year."
-      },
-      {
-        "img": "../images/cookies/newYears/singleOreoNewYear.jpeg",
-        "description": "A single stuffed Oreo cookie for New Year."
-      },
-      {
-        "img": "../images/cookies/newYears/newYearsPops.jpeg",
-        "description": "A set of New Year-themed cake pops."
-      },
-      {
-        "img": "../images/cookies/newYears/goldAndSilverNewPops.jpeg",
-        "description": "A set of gold and silver New Year-themed cake pops."
       }
     ]
   }

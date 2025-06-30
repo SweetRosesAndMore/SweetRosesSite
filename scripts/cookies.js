@@ -5,6 +5,7 @@ const START_COUNT = 12;
 let allCookies = [];  // flat list (each item keeps .category)
 let categories = [];  // e.g., ['babyShower','christmas', …]
 let activeCat = "all";  // current category filter
+let currentPool = [];  // currently displayed cookies
 
 const searchInput = document.getElementById("cookie-search");
 const showMoreBtn = document.getElementById("show-more-btn");
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
       buildFilterButtons(categories);
 
       shuffle(allCookies);
+      currentPool = allCookies;
       renderCookies(allCookies.slice(0, START_COUNT));
       toggleShowMore();
     })
@@ -53,9 +55,11 @@ function applyFilter(cat, clickedBtn) {
   activeCat = cat;
   wrapActive(clickedBtn);
 
-  const pool = cat === "all" ? allCookies : allCookies.filter(c => c.category === cat);
-  renderCookies(pool.slice(0, START_COUNT));
-  toggleShowMore(pool.length);
+  currentPool =
+    cat === "all" ? allCookies : allCookies.filter(c => c.category === cat);
+
+  renderCookies(currentPool.slice(0, START_COUNT));
+  toggleShowMore(currentPool.length);
   resetSearch();
 }
 
@@ -120,7 +124,7 @@ searchInput.addEventListener("input", () => {
 
 function runSearch() {
   const q = searchInput.value.trim().toLowerCase();
-  const base = activeCat === "all" ? allCookies : allCookies.filter(c => c.category === activeCat);
+  const base = currentPool;
 
   if (!q) {
     renderCookies(base.slice(0, START_COUNT));
@@ -143,9 +147,10 @@ function resetSearch() {
 
 /* Show More Button */
 showMoreBtn.addEventListener("click", () => {
-  renderCookies(allCookies);
+  renderCookies(currentPool);   
   showMoreBtn.classList.add("d-none");
 });
+
 
 function toggleShowMore(poolSize = allCookies.length) {
   if (poolSize > START_COUNT) {
