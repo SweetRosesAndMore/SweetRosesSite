@@ -296,6 +296,10 @@
       {
         "img": "../images/cookies/fall/fallCookiesBasket.jpeg",
         "description": "A colorful fall cookies basket."
+      },
+      {
+        "img": "../images/cookies/fall/fallCocoaTop.jpeg",
+        "description": "A top view of a cookie adorned with Christmas cocoa themes."
       }
     ],
     "halloween": [
@@ -314,10 +318,6 @@
       {
         "img": "../images/cookies/christmas/christmasCocoaNarrow.jpeg",
         "description": "A narrow cookie featuring festive cocoa designs."
-      },
-      {
-        "img": "../images/cookies/christmas/christmasCocoaTop.jpeg",
-        "description": "A top view of a cookie adorned with Christmas cocoa themes."
       },
       {
         "img": "../images/cookies/christmas/christmasCocoaWide.jpeg",
@@ -376,14 +376,6 @@
       {
         "img": "../images/cookies/newYears/singleOreoNewYear.jpeg",
         "description": "A single stuffed Oreo cookie for New Year."
-      },
-      {
-        "img": "../images/cookies/newYears/newYearsPops.jpeg",
-        "description": "A set of New Year-themed cake pops."
-      },
-      {
-        "img": "../images/cookies/newYears/goldAndSilverNewPops.jpeg",
-        "description": "A set of gold and silver New Year-themed cake pops."
       }
     ],
     "valentine": [
