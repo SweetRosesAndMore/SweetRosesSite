@@ -300,18 +300,154 @@
       {
         "img": "../images/cookies/fall/fallCocoaTop.jpeg",
         "description": "A top view of a cookie adorned with Christmas cocoa themes."
+      },
+      {
+        "img": "../images/cookies/fall/cakePopsPumpkin.jpeg",
+        "description": "Pumpkin-shaped cake pops, perfect for fall."
+      },
+      {
+        "img": "../images/cookies/fall/cocoaCups.jpeg",
+        "description": "A set of cocoa cup-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/fall/doe.jpeg",
+        "description": "A doe-shaped cookie, perfect for fall."
+      },
+      {
+        "img": "../images/cookies/fall/fallBox.jpeg",
+        "description": "A fall-themed cookie box."
+      },
+      {
+        "img": "../images/cookies/fall/fourLeafCookies.jpeg",
+        "description": "A set of four-leaf clover-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/fall/icePops.jpeg",
+        "description": "A set of ice pop-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/fall/leafCookie.jpeg",
+        "description": "A leaf-shaped cookie, perfect for fall."
+      },
+      {
+        "img": "../images/cookies/fall/pumpkin.jpeg",
+        "description": "A pumpkin-shaped cookie, perfect for fall."
+      },
+      {
+        "img": "../images/cookies/fall/squirrel.jpeg",
+        "description": "A squirrel-shaped cookie, perfect for fall."
+      },
+      {
+        "img": "../images/cookies/fall/squirrelCookies.jpeg",
+        "description": "A set of squirrel-shaped cookies, perfect for fall."
+      },
+      {
+        "img": "../images/cookies/fall/velvet.jpeg",
+        "description": "A velvet-themed cookie, perfect for fall."
+      },
+      {
+        "img": "../images/cookies/fall/velvetHalf.jpeg",
+        "description": "A half-velvet-themed cookie, perfect for fall."
+      },
+      {
+        "img": "../images/cookies/fall/windowCookies.jpeg",
+        "description": "A set of window-shaped cookies, perfect for fall."
       }
     ],
     "halloween": [
       {
         "img": "../images/cookies/halloween/halloweenCookies.jpeg",
         "description": "A set of Halloween-themed cookies."
+      },
+      {
+        "img": "../images/cookies/halloween/cocoaBox.jpeg",
+        "description": "A box of cocoa-themed Halloween cookies."
+      },
+      {
+        "img": "../images/cookies/halloween/ghost.jpeg",
+        "description": "A ghost-shaped cookie, perfect for Halloween."
+      },
+      {
+        "img": "../images/cookies/halloween/ghost2.jpeg",
+        "description": "A second ghost-shaped cookie, perfect for Halloween."
+      },
+      {
+        "img": "../images/cookies/halloween/globe.jpeg",
+        "description": "A globe-shaped cookie, perfect for Halloween."
+      },
+      {
+        "img": "../images/cookies/halloween/happy.jpeg",
+        "description": "A happy-themed cookie, perfect for Halloween."
+      },
+      {
+        "img": "../images/cookies/halloween/oreoBox.jpeg",
+        "description": "A box of Oreo cookies, perfect for Halloween."
+      },
+      {
+        "img": "../images/cookies/halloween/oreoBox2.jpeg",
+        "description": "A second box of Oreo cookies, perfect for Halloween."
+      },
+      {
+        "img": "../images/cookies/halloween/oreoBundle.jpeg",
+        "description": "A bundle of Oreo cookies, perfect for Halloween."
+      },
+      {
+        "img": "../images/cookies/halloween/pumpkin.jpeg",
+        "description": "A pumpkin-shaped cookie, perfect for Halloween."
+      },
+      {
+        "img": "../images/cookies/halloween/pyoHalloween.jpeg",
+        "description": "A playful paint your own Halloween-themed cookie."
+      },
+      {
+        "img": "../images/cookies/halloween/riceKrisp.jpeg",
+        "description": "A rice Krispies treat shaped like a Halloween character."
+      },
+      {
+        "img": "../images/cookies/halloween/sugar3DBundle.jpeg",
+        "description": "A bundle of 3D sugar cookies, perfect for Halloween."
+      },
+      {
+        "img": "../images/cookies/halloween/sugarBundle.jpeg",
+        "description": "A bundle of sugar cookies, perfect for Halloween."
       }
     ],
     "thanksgiving": [
       {
         "img": "../images/cookies/thanksgiving/thanksgivingCookies.jpeg",
         "description": "A Thanksgiving-themed cookie, perfect for the holiday."
+      },
+      {
+        "img": "../images/cookies/thanksgiving/turkey.jpeg",
+        "description": "A turkey-shaped cookie, perfect for Thanksgiving."
+      },
+      {
+        "img": "../images/cookies/thanksgiving/turkey3D.jpeg",
+        "description": "A 3D turkey-shaped cookie, perfect for Thanksgiving."
+      },
+      {
+        "img": "../images/cookies/thanksgiving/lollipop.jpeg",
+        "description": "A lollipop-shaped cookie, perfect for Thanksgiving."
+      },
+      {
+        "img": "../images/cookies/thanksgiving/mugBundle.jpeg",
+        "description": "A bundle of Thanksgiving-themed mugs and cookies."
+      },
+      {
+        "img": "../images/cookies/thanksgiving/pretzelBundle.jpeg",
+        "description": "A bundle of Thanksgiving-themed pretzels."
+      },
+      {
+        "img": "../images/cookies/thanksgiving/sugarCookiesThanksgiving.jpeg",
+        "description": "A set of sugar cookies, perfect for Thanksgiving."
+      },
+      {
+        "img": "../images/cookies/thanksgiving/oreoBundle.jpeg",
+        "description": "A bundle of Thanksgiving-themed Oreo cookies."
+      },
+      {
+        "img": "../images/cookies/thanksgiving/wordSearch.jpeg",
+        "description": "A Thanksgiving-themed word search cookie."
       }
     ],
     "christmas": [
@@ -354,6 +490,42 @@
       {
         "img": "../images/cookies/christmas/christmasSimpleCookies.jpeg",
         "description": "A collection of simple yet festive Christmas cookies, perfect for any holiday gathering."
+      },
+      {
+        "img": "../images/cookies/christmas/bell.jpeg",
+        "description": "A festive bell-shaped cookie, perfect for holiday celebrations."
+      },
+      {
+        "img": "../images/cookies/christmas/cookieBundle.jpeg",
+        "description": "A delightful bundle of Christmas-themed cookies."
+      },
+      {
+        "img": "../images/cookies/christmas/house.jpeg",
+        "description": "A charming house-shaped cookie, perfect for holiday festivities."
+      },
+      {
+        "img": "../images/cookies/christmas/pretzel.jpeg",
+        "description": "A festive pretzel-shaped cookie, perfect for holiday celebrations."
+      },
+      {
+        "img": "../images/cookies/christmas/redCookieBundle.jpeg",
+        "description": "A festive bundle of red-themed Christmas cookies."
+      },
+      {
+        "img": "../images/cookies/christmas/santa.jpeg",
+        "description": "A festive Santa-shaped cookie, perfect for holiday celebrations."
+      },
+      {
+        "img": "../images/cookies/christmas/snowman.jpeg",
+        "description": "A festive snowman-shaped cookie, perfect for holiday celebrations."
+      },
+      {
+        "img": "../images/cookies/christmas/trees.jpeg",
+        "description": "A set of festive tree-shaped cookies, perfect for holiday celebrations."
+      },
+      {
+        "img": "../images/cookies/christmas/treeHalf.jpeg",
+        "description": "A half tree-shaped cookie, perfect for holiday celebrations."
       }
     ],
     "newYears": [
@@ -376,6 +548,14 @@
       {
         "img": "../images/cookies/newYears/singleOreoNewYear.jpeg",
         "description": "A single stuffed Oreo cookie for New Year."
+      },
+      {
+        "img": "../images/cookies/newYears/fourNewYear.jpeg",
+        "description": "four Oreo cookies for New Year."
+      },
+      {
+        "img": "../images/cookies/newYears/sixNewYear.jpeg",
+        "description": "six Oreo cookies for New Year."
       }
     ],
     "valentine": [
@@ -402,6 +582,42 @@
       {
         "img": "../images/cookies/valentine/valentineRoseRice.jpeg",
         "description": "A set of Valentine's Day rose-shaped Rice Krispie treats."
+      },
+      {
+        "img": "../images/cookies/valentine/heartBombAndCookies.jpeg",
+        "description": "A delightful combination of heart-shaped cookies and cake pops."
+      },
+      {
+        "img": "../images/cookies/valentine/heartBombs.jpeg",
+        "description": "A set of heart shaped crackable cocoa cookies"
+      },
+      {
+        "img": "../images/cookies/valentine/thinRoses.jpeg",
+        "description": "A set of thin rose-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/valentine/valBundle3D.jpeg",
+        "description": "A 3D bundle of Valentine's Day-themed cookies."
+      },
+      {
+        "img": "../images/cookies/valentine/valCocoa.jpeg",
+        "description": "A set of Valentine's Day cocoa cookies."
+      },
+      {
+        "img": "../images/cookies/valentine/valCook.jpeg",
+        "description": "A set of Valentine's Day cookies."
+      },
+      {
+        "img": "../images/cookies/valentine/valHeartCracks.jpeg",
+        "description": "A set of heart-shaped cookies with crackled chocolate."
+      },
+      {
+        "img": "../images/cookies/valentine/valOreo.jpeg",
+        "description": "A set of Valentine's Day Oreo cookies."
+      },
+      {
+        "img": "../images/cookies/valentine/valSugarCookies.jpeg",
+        "description": "A set of Valentine's Day sugar cookies."
       }
     ],
     "decorative": [
@@ -578,6 +794,18 @@
       {
         "img": "../images/cookies/summer/beachSugarCookie.jpeg",
         "description": "A beach-themed sugar cookie, perfect for summer."
+      },
+      {
+        "img": "../images/cookies/summer/fourSumCookies.jpeg",
+        "description": "four summer beach cookies, perfect for any summer celebration."
+      },
+      {
+        "img": "../images/cookies/summer/sumBundle.jpeg",
+        "description": "bundle of summer cookies."
+      },
+      {
+        "img": "../images/cookies/summer/sumFlow.jpeg",
+        "description": "Summer flower-shaped cookies, perfect for any occasion."
       }
     ]
   }

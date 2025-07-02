@@ -111,7 +111,7 @@ a:hover {
 .shape-trim {
   height: 24px;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 24'%3E%3Cpath fill='%23FFFFFF' d='M0 24C10 0 20 0 30 24C40 0 50 0 60 24H0Z'/%3E%3C/svg%3E")
-    repeat-x center bottom/60px 24px;
+    repeat-x center bottom/60px 24px;                        
 }
 
 .shape-trim.flip {
@@ -187,4 +187,18 @@ footer {
 .filter-btn:focus-visible {
   box-shadow: 0 0 0 3px rgba(247, 138, 154, 0.35);
   outline: none;
+}
+
+/* nav shadow */
+.navbar {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3) !important;
+  z-index: 1050;
+  position: relative;
+}
+
+/* footer shadow */
+footer {
+  position: relative;
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1040;
 }
