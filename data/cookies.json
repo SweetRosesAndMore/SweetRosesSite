@@ -362,6 +362,10 @@
       {
         "img": "../images/cookies/graduation/icePops.jpeg",
         "description": "A set of ice pop-shaped cookies, perfect for graduation."
+      },
+      {
+        "img": "../images/cookies/graduation/gradGift.jpeg",
+        "description": "A box of graduation-themed cookies."
       }
     ],
     "teacherAppreciation": [
@@ -784,7 +788,7 @@
         "description": "A set of Valentine's Day bear-shaped cookies."
       },
       {
-        "img": "../images/cookies/valentine/ValentineRiceKrispie.jpeg",
+        "img": "../images/cookies/valentine/valentineRiceKrispie.jpeg",
         "description": "A set of Valentine's Day Rice Krispie treats."
       },
       {
