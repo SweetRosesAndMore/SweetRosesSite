@@ -178,7 +178,32 @@
         "description": "A sunshine-themed birthday cookies set."
       }
     ],
-    "baptism": [],
+    "baptism": [
+      {
+        "img": "../images/cookies/baptism/colin.jpeg",
+        "description": "Colin's baptism cookie."
+      },
+      {
+        "img": "../images/cookies/baptism/dovePop.jpeg",
+        "description": "A dove-shaped cookie pop for baptism."
+      },
+      {
+        "img": "../images/cookies/baptism/goldDove.jpeg",
+        "description": "A gold dove-shaped cookie for baptism."
+      },
+      {
+        "img": "../images/cookies/baptism/pinkCross.jpeg",
+        "description": "A pink cross-shaped cookie for baptism."
+      },
+      {
+        "img": "../images/cookies/baptism/pinkOpen.jpeg",
+        "description": "A pink open cross-shaped cookie for baptism."
+      },
+      {
+        "img": "../images/cookies/baptism/sixOreo.jpeg",
+        "description": "A set of six Oreo cookies for baptism."
+      }
+    ],
     "babyShower": [
       {
         "img": "../images/cookies/babyShower/babyStarGroup.jpeg",
@@ -225,8 +250,90 @@
         "description": "A sweet poem about babies, beautifully decorated on a cookie."
       }
     ],
-    "firstCommunion": [],
-    "easter": [],
+    "firstCommunion": [
+      {
+        "img": "../images/cookies/firstCommunion/ava.jpeg",
+        "description": "Ava's first communion cookie."
+      },
+      {
+        "img": "../images/cookies/firstCommunion/blueCrossBox.jpeg",
+        "description": "A blue cross-themed cookie box for first communion."
+      },
+      {
+        "img": "../images/cookies/firstCommunion/crossPops.jpeg",
+        "description": "Cross-shaped cookie pops for first communion."
+      },
+      {
+        "img": "../images/cookies/firstCommunion/silverCrossCaps.jpeg",
+        "description": "Silver cross-shaped cookie caps for first communion."
+      },
+      {
+        "img": "../images/cookies/firstCommunion/singleCookie.jpeg",
+        "description": "A single cookie for first communion."
+      },
+      {
+        "img": "../images/cookies/firstCommunion/sugarBox.jpeg",
+        "description": "A sugar box cookie for first communion."
+      }
+    ],
+    "easter": [
+      {
+        "img": "../images/cookies/easter/3DBunny.jpeg",
+        "description": "3D bunny cookies Easter"
+      },
+      {
+        "img": "../images/cookies/easter/bunny.jpeg",
+        "description": "Bunny-shaped cookies Easter"
+      },
+      {
+        "img": "../images/cookies/easter/bunnyBox.jpeg",
+        "description": "Bunny box cookies Easter"
+      },
+      {
+        "img": "../images/cookies/easter/bunnyPop.jpeg",
+        "description": "Bunny pop cookies Easter"
+      },
+      {
+        "img": "../images/cookies/easter/bunnyPops.jpeg",
+        "description": "Bunny pops cookies Easter"
+      },
+      {
+        "img": "../images/cookies/easter/bunnyCookie.jpeg",
+        "description": "Bunny cookie Easter"
+      },
+      {
+        "img": "../images/cookies/easter/cakeBox.jpeg",
+        "description": "Cake box cookies Easter"
+      },
+      {
+        "img": "../images/cookies/easter/cross.jpeg",
+        "description": "Cross cookies Easter"
+      },
+      {
+        "img": "../images/cookies/easter/lollipop.jpeg",
+        "description": "Lollipop cookies Easter"
+      },
+      {
+        "img": "../images/cookies/easter/oreoBunny.jpeg",
+        "description": "Oreo bunny cookies Easter"
+      },
+      {
+        "img": "../images/cookies/easter/pretzelBox.jpeg",
+        "description": "Pretzel box cookies Easter"
+      },
+      {
+        "img": "../images/cookies/easter/sugarBox.jpeg",
+        "description": "Sugar box cookies Easter"
+      },
+      {
+        "img": "../images/cookies/easter/sugarBox2.jpeg",
+        "description": "Sugar box 2 cookies Easter"
+      },
+      {
+        "img": "../images/cookies/easter/velvetBox.jpeg",
+        "description": "Velvet box cookies Easter"
+      }
+    ],
     "graduation": [
       {
         "img": "../images/cookies/graduation/gradCookies.jpeg",
@@ -243,9 +350,42 @@
       {
         "img": "../images/cookies/graduation/graduationBubbleSix.jpeg",
         "description": "A six-pack of bubble graduation cookies."
+      },
+            {
+        "img": "../images/cookies/graduation/fourOreo.jpeg",
+        "description": "A set of four Oreo cookies, perfect for graduation."
+      },
+      {
+        "img": "../images/cookies/graduation/fourOreo2.jpeg",
+        "description": "A set of four Oreo cookies, perfect for graduation."
+      },
+      {
+        "img": "../images/cookies/graduation/icePops.jpeg",
+        "description": "A set of ice pop-shaped cookies, perfect for graduation."
       }
     ],
-    "teacherAppreciation": [],
+    "teacherAppreciation": [
+      {
+        "img": "../images/cookies/teacherAppreciation/oreoBox.jpeg",
+        "description": "A box of Oreo cookies, perfect for teacher appreciation."
+      },
+      {
+        "img": "../images/cookies/teacherAppreciation/oreoBox2.jpeg",
+        "description": "A second box of Oreo cookies, perfect for teacher appreciation."
+      },
+      {
+        "img": "../images/cookies/teacherAppreciation/pencilBox.jpeg",
+        "description": "A box of pencil-shaped cookies, perfect for teacher appreciation."
+      },
+      {
+        "img": "../images/cookies/teacherAppreciation/sugarBox.jpeg",
+        "description": "A box of sugar cookies, perfect for teacher appreciation."
+      },
+      {
+        "img": "../images/cookies/teacherAppreciation/sugarBundle.jpeg",
+        "description": "A bundle of sugar cookies, perfect for teacher appreciation."
+      }
+    ],
     "mothersDay": [
       {
         "img": "../images/cookies/mothersDay/md_Leaf.jpeg",
@@ -258,12 +398,52 @@
       {
         "img": "../images/cookies/mothersDay/chocCoverCakeFlowers.jpeg",
         "description": "A single of chocolate-covered cake flowers brownie."
+      },
+      {
+        "img": "../images/cookies/mothersDay/motherBox.jpeg",
+        "description": "A box of cookies themed for Mother's Day."
+      },
+      {
+        "img": "../images/cookies/mothersDay/motherBox2.jpeg",
+        "description": "A second box of cookies themed for Mother's Day."
+      },
+      {
+        "img": "../images/cookies/mothersDay/motherBoxRose.jpeg",
+        "description": "A box of rose-themed cookies for Mother's Day."
+      },
+      {
+        "img": "../images/cookies/mothersDay/oreo.jpeg",
+        "description": "Oreo cookies themed for Mother's Day."
+      },
+      {
+        "img": "../images/cookies/mothersDay/oreoBox.jpeg",
+        "description": "A box of Oreo cookies themed for Mother's Day."
+      },
+      {
+        "img": "../images/cookies/mothersDay/sugarBox.jpeg",
+        "description": "A box of sugar cookies themed for Mother's Day."
       }
     ],
     "fathersDay": [
       {
         "img": "../images/cookies/fathersDay/fathersDayCookies.jpeg",
         "description": "A set of Father's Day-themed cookies."
+      },
+      {
+        "img": "../images/cookies/fathersDay/dadBox.jpeg",
+        "description": "A box of cookies themed for Father's Day."
+      },
+      {
+        "img": "../images/cookies/fathersDay/dadBox2.jpeg",
+        "description": "A second box of cookies themed for Father's Day."
+      },
+      {
+        "img": "../images/cookies/fathersDay/six.jpeg",
+        "description": "A sixth set of Father's Day-themed cookies."
+      },
+      {
+        "img": "../images/cookies/fathersDay/six2.jpeg",
+        "description": "A second sixth set of Father's Day-themed cookies."
       }
     ],
     "fourthOfJuly": [
@@ -282,6 +462,38 @@
       {
         "img": "../images/cookies/fourthOfJuly/usaCookies.jpeg",
         "description": "A collection of USA-themed cookies."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/cakePopCup.jpeg",
+        "description": "A festive cake pop cup decorated for the Fourth of July."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/cakePopHalf.jpeg",
+        "description": "A half-cake pop decorated for the Fourth of July."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/flag.jpeg",
+        "description": "A festive American flag cookie."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/fourth.jpeg",
+        "description": "A festive Fourth of July cookie."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/lollipop.jpeg",
+        "description": "A festive lollipop cookie."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/oreoCookieLot.jpeg",
+        "description": "A festive Oreo cookie lot decorated for the Fourth of July."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/pretzel.jpeg",
+        "description": "A festive pretzel cookie decorated for the Fourth of July."
+      },
+      {
+        "img": "../images/cookies/fourthOfJuly/rice.jpeg",
+        "description": "A festive rice krispie cookie decorated for the Fourth of July."
       }
     ],
     "fall": [
