@@ -94,6 +94,38 @@
       {
         "img": "../images/cookies/logoCookies/meitheal.jpeg",
         "description": "a company logo cookie: Meitheal"
+      },
+      {
+        "img": "../images/cookies/logoCookies/25yrs.jpeg",
+        "description": "celebrating 25 years company logo cookie"
+      },
+      {
+        "img": "../images/cookies/logoCookies/bartlett.jpeg",
+        "description": "a company logo cookie: Bartlett"
+      },
+      {
+        "img": "../images/cookies/logoCookies/DD.jpeg",
+        "description": "a company logo cookie: DD"
+      },
+      {
+        "img": "../images/cookies/logoCookies/fenwick.jpeg",
+        "description": "a company logo cookie: Fenwick"
+      },
+      {
+        "img": "../images/cookies/logoCookies/mw.jpeg",
+        "description": "a company logo cookie: MW"
+      },
+      {
+        "img": "../images/cookies/logoCookies/soccerLot.jpeg",
+        "description": "lot of soccer cookies for a team"
+      },
+      {
+        "img": "../images/cookies/logoCookies/swam.jpeg",
+        "description": "a company logo cookie: Swam"
+      },
+      {
+        "img": "../images/cookies/logoCookies/torpedo.jpeg",
+        "description": "a company logo cookie: Torpedo  "
       }
     ],
     "birthdayParty": [
@@ -176,6 +208,54 @@
       {
         "img": "../images/cookies/birthdayParty/oneSunshineCookies.jpeg",
         "description": "A sunshine-themed birthday cookies set."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/bees.jpeg",
+        "description": "Birthday cookies with bees theme."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/coffee.jpeg",
+        "description": "Birthday cookies with coffee theme."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/disney.jpeg",
+        "description": "Birthday cookies with Disney theme."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/plane.jpeg",
+        "description": "Birthday cookies with plane theme."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/purple.jpeg",
+        "description": "Birthday cookies with purple theme."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/sun.jpeg",
+        "description": "Birthday cookies with sun theme."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/wanda.jpeg",
+        "description": "Birthday cookies with Wanda theme."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/wanda4.jpeg",
+        "description": "Birthday cookies with Wanda theme, version 4."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/whiskey.jpeg",
+        "description": "Birthday cookies with whiskey theme."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/18.jpeg",
+        "description": "Birthday cookies with 18 theme."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/40.jpeg",
+        "description": "Birthday cookies with 40 theme."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/50.jpeg",
+        "description": "Birthday cookies with 50 theme."
       }
     ],
     "baptism": [
@@ -248,6 +328,46 @@
       {
         "img": "../images/cookies/babyShower/poemBaby.jpeg",
         "description": "A sweet poem about babies, beautifully decorated on a cookie."
+      },
+      {
+        "img": "../images/cookies/babyShower/honey.jpeg",
+        "description": "Honey-themed baby shower cookies."
+      },
+      {
+        "img": "../images/cookies/babyShower/lotCakePop.jpeg",
+        "description": "A lot of cake pop cookies for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/sugarBibs.jpeg",
+        "description": "Sugar bibs cookies for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/sugarBottle.jpeg",
+        "description": "Sugar bottle cookies for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/sugarBox1.jpeg",
+        "description": "Sugar box 1 cookies for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/sugarBox2.jpeg",
+        "description": "Sugar box 2 cookies for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/sugarCookies1.jpeg",
+        "description": "Sugar cookies 1 for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/sugarCookies2.jpeg",
+        "description": "Sugar cookies 2 for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/sugarCookies3.jpeg",
+        "description": "Sugar cookies 3 for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/sugarPumpkin.jpeg",
+        "description": "Sugar pumpkin cookies for a baby shower."
       }
     ],
     "firstCommunion": [
@@ -664,7 +784,24 @@
       {
         "img": "../images/cookies/thanksgiving/wordSearch.jpeg",
         "description": "A Thanksgiving-themed word search cookie."
+      },
+      {
+        "img": "../images/cookies/thanksgiving/pumpkinLeaves.jpeg",
+        "description": "A set of pumpkin leaf-shaped cookies, perfect for Thanksgiving."
+      },
+      {
+        "img": "../images/cookies/thanksgiving/thanksSweater.jpeg",
+        "description": "A sweater-themed cookie, perfect for Thanksgiving."
+      },
+      {
+        "img": "../images/cookies/thanksgiving/turkeyDrizzle.jpeg",
+        "description": "A turkey-shaped cookie with drizzle decoration, perfect for Thanksgiving."
+      },
+      {
+        "img": "../images/cookies/thanksgiving/turkeyPops.jpeg",
+        "description": "Turkey-shaped cookie pops, perfect for Thanksgiving."
       }
+
     ],
     "christmas": [
       {
@@ -742,6 +879,110 @@
       {
         "img": "../images/cookies/christmas/treeHalf.jpeg",
         "description": "A half tree-shaped cookie, perfect for holiday celebrations."
+      },
+      {
+        "img": "../images/cookies/christmas/christmasFlower.jpeg",
+        "description": "christmas flower cookie"
+      },
+      {
+        "img": "../images/cookies/christmas/christmasPretz.jpeg",
+        "description": "A christmas Pretzel cookie"
+      },
+      {
+        "img": "../images/cookies/christmas/figureCakePops.jpeg",
+        "description": "Cake pops with different Christmas figures."
+      },
+      {
+        "img": "../images/cookies/christmas/fourPostcards.jpeg",
+        "description": "Sugar cookie postcards with Christmas designs."
+      },
+      {
+        "img": "../images/cookies/christmas/houseCookie1.jpeg",
+        "description": "Cookies in the shape of the house decorated for Christmas."
+      },
+      {
+        "img": "../images/cookies/christmas/houseCookie2.jpeg",
+        "description": "Another set of cookies in the shape of the house decorated for Christmas."
+      },
+      {
+        "img": "../images/cookies/christmas/joySugarCookies.jpeg",
+        "description": "Joy-themed sugar cookies for Christmas."
+      },
+      {
+        "img": "../images/cookies/christmas/lotPost.jpeg",
+        "description": "A collection of Christmas-themed sugar cookie postcards."
+      },
+      {
+        "img": "../images/cookies/christmas/lotTreePops.jpeg",
+        "description": "A collection of Christmas-themed tree-shaped cake pops."
+      },
+      {
+        "img": "../images/cookies/christmas/peppermintSpiral.jpeg",
+        "description": "A peppermint spiral cookie, perfect for holiday celebrations."
+      },
+      {
+        "img": "../images/cookies/christmas/snowCookies.jpeg",
+        "description": "Snowflake-shaped cookies, perfect for winter festivities."
+      },
+      {
+        "img": "../images/cookies/christmas/snowSix.jpeg",
+        "description": "A set of six snowflake-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/christmas/sugarCookie5.jpeg",
+        "description": "A set of five sugar cookies with Christmas designs."
+      },
+      {
+        "img": "../images/cookies/christmas/sugarCookies4.jpeg",
+        "description": "A set of four sugar cookies with Christmas designs."
+      },
+      {
+        "img": "../images/cookies/christmas/sugarCookies3.jpeg",
+        "description": "A set of three sugar cookies with Christmas designs."
+      },
+      {
+        "img": "../images/cookies/christmas/sugarCookies2.jpeg",
+        "description": "A set of two sugar cookies with Christmas designs."
+      },
+      {
+        "img": "../images/cookies/christmas/sugarCookies1.jpeg",
+        "description": "A set of one sugar cookie with Christmas designs."
+      },
+      {
+        "img": "../images/cookies/christmas/sugarSnowmanFour.jpeg",
+        "description": "A set of four snowman-shaped sugar cookies."
+      },
+      {
+        "img": "../images/cookies/christmas/sugarSnowmanTwo.jpeg",
+        "description": "A set of two snowman-shaped sugar cookies."
+      },
+      {
+        "img": "../images/cookies/christmas/sugarStarbucks.jpeg",
+        "description": "Starbucks-themed sugar cookies for Christmas."
+      },
+      {
+        "img": "../images/cookies/christmas/treePops.jpeg",
+        "description": "Christmas tree-shaped cake pops."
+      },
+      {
+        "img": "../images/cookies/christmas/treesEight.jpeg",
+        "description": "A set of eight Christmas tree-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/christmas/unwrapChocMugs.jpeg",
+        "description": "Unwrapped chocolate mugs for Christmas."
+      },
+      {
+        "img": "../images/cookies/christmas/unwrapPost.jpeg",
+        "description": "Unwrapped Christmas-themed postcards."
+      },
+      {
+        "img": "../images/cookies/christmas/wrapChocMugs.jpeg",
+        "description": "Wrapped chocolate mugs for Christmas."
+      },
+      {
+        "img": "../images/cookies/christmas/wrapPost.jpeg",
+        "description": "Wrapped Christmas-themed postcards."
       }
     ],
     "newYears": [
@@ -772,6 +1013,26 @@
       {
         "img": "../images/cookies/newYears/sixNewYear.jpeg",
         "description": "six Oreo cookies for New Year."
+      },
+      {
+        "img": "../images/cookies/newYears/2oreoCookies.jpeg",
+        "description": "A set of two Oreo cookies for New Year."
+      },
+      {
+        "img": "../images/cookies/newYears/sugarCookies1.jpeg",
+        "description": "A set of one sugar cookie for New Year."
+      },
+      {
+        "img": "../images/cookies/newYears/sugarCookies2.jpeg",
+        "description": "A set of two sugar cookies for New Year."
+      },
+      {
+        "img": "../images/cookies/newYears/sugarCookies3.jpeg",
+        "description": "A set of three sugar cookies for New Year."
+      },
+      {
+        "img": "../images/cookies/newYears/sugarCookies4.jpeg",
+        "description": "A set of four sugar cookies for New Year."
       }
     ],
     "valentine": [
@@ -950,6 +1211,18 @@
       {
         "img": "../images/cookies/paintYourOwn/paintYourOwnTurkey.jpeg",
         "description": "A paint-your-own turkey cookie kit."
+      },
+      {
+        "img": "../images/cookies/paintYourOwn/paintSanta.jpeg",
+        "description": "A paint-your-own Santa cookie kit."
+      },
+      {
+        "img": "../images/cookies/paintYourOwn/paintSnowman.jpeg",
+        "description": "A paint-your-own snowman cookie kit."
+      },
+      {
+        "img": "../images/cookies/paintYourOwn/paintPenguin.jpeg",
+        "description": "A paint-your-own penguin cookie kit."
       }
     ],
     "roses": [
