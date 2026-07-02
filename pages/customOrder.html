@@ -96,23 +96,46 @@
           <h2 class="section-title text-center mb-3">Request a Cookie</h2>
 
           <div class="col-md-6">
-            <label for="fromName" class="form-label fw-semibold">Your Name</label>
-            <input id="fromName" class="form-control" type="text" name="from_name" required />
+            <label for="fromName" class="form-label fw-semibold"
+              >Your Name</label
+            >
+            <input
+              id="fromName"
+              class="form-control"
+              type="text"
+              name="from_name"
+              required
+            />
           </div>
 
           <div class="col-md-6">
             <label for="replyTo" class="form-label fw-semibold">E-mail</label>
-            <input id="replyTo" class="form-control" type="email" name="reply_to" required />
+            <input
+              id="replyTo"
+              class="form-control"
+              type="email"
+              name="reply_to"
+              required
+            />
           </div>
 
           <div class="col-md-6">
-            <label for="phone" class="form-label fw-semibold">Phone (optional)</label>
+            <label for="phone" class="form-label fw-semibold"
+              >Phone (optional)</label
+            >
             <input id="phone" class="form-control" type="tel" name="phone" />
           </div>
 
           <div class="col-md-6">
-            <label for="needBy" class="form-label fw-semibold">Desired Date</label>
-            <input id="needBy" class="form-control" type="date" name="need_by" />
+            <label for="needBy" class="form-label fw-semibold"
+              >Desired Date</label
+            >
+            <input
+              id="needBy"
+              class="form-control"
+              type="date"
+              name="need_by"
+            />
           </div>
 
           <div class="col-12">
@@ -171,81 +194,54 @@
       const TEMPLATE_ID = "template_o7a1ugr";
       const PUBLIC_KEY = "5b8-Ag4iRXl_7xsKu";
 
-      emailjs.init({
-        publicKey: PUBLIC_KEY,
-        limitRate: {
-          id: "sweet-roses-order-form",
-          throttle: 10000,
-        },
-      });
+      emailjs.init(PUBLIC_KEY);
 
+      /* ------------ Submit handler with Toasts ------------ */
       const form = document.getElementById("orderForm");
       const toastArea = document.getElementById("toastArea");
-      const submitButton = form.querySelector('button[type="submit"]');
-
-      let isSending = false;
 
       function showToast(message, isSuccess = true) {
+        // Build the toast element
         const toast = document.createElement("div");
-
         toast.className = `toast align-items-center text-bg-${isSuccess ? "success" : "danger"} border-0`;
-
         toast.role = "alert";
         toast.ariaLive = "assertive";
         toast.ariaAtomic = "true";
-
         toast.innerHTML = `
       <div class="d-flex">
         <div class="toast-body">
           ${message}
         </div>
-        <button
-          type="button"
-          class="btn-close btn-close-white me-2 m-auto"
-          data-bs-dismiss="toast"
-          aria-label="Close">
-        </button>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>`;
 
+        // Append, show, then auto-dispose
         toastArea.appendChild(toast);
-
         const bsToast = bootstrap.Toast.getOrCreateInstance(toast, {
           delay: 4000,
         });
-
         bsToast.show();
+
+        // Remove from DOM after it hides to avoid buildup
         toast.addEventListener("hidden.bs.toast", () => toast.remove());
       }
 
-      form.addEventListener("submit", async (e) => {
+      form.addEventListener("submit", (e) => {
         e.preventDefault();
 
-        // Prevent double-clicks or duplicate submit events.
-        if (isSending) return;
-
-        isSending = true;
-
-        const originalButtonText = submitButton.textContent;
-        submitButton.disabled = true;
-        submitButton.textContent = "Sending...";
-
-        try {
-          await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form);
-
-          showToast("Thank you! We’ll get back to you shortly.", true);
-          form.reset();
-        } catch (err) {
-          console.error("EmailJS error:", err);
-
-          showToast(
-            "Oops — something went wrong. Please try again or reach out to us via email.",
-            false,
-          );
-        } finally {
-          isSending = false;
-          submitButton.disabled = false;
-          submitButton.textContent = originalButtonText;
-        }
+        emailjs
+          .sendForm(SERVICE_ID, TEMPLATE_ID, form)
+          .then(() => {
+            showToast("Thank you! We’ll get back to you shortly.", true);
+            form.reset();
+          })
+          .catch((err) => {
+            console.error(err);
+            showToast(
+              "Oops — something went wrong. Please try again or reach out to us via Email",
+              false,
+            );
+          });
       });
     </script>
   </body>
