@@ -52,6 +52,22 @@
       {
         "img": "../images/cookies/partyPackages/sugarFifteen.jpeg",
         "description": "Sugar fifteen cookies with sweet designs. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/party80cookies.jpeg",
+        "description": "80 year anniversary cookies for a party. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/pinkGoldPartyPackagePops.jpeg",
+        "description": "Pink and gold party pops cookies. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/pinkGoldPartyPretz.jpeg",
+        "description": "Pink and gold party pretzel cookies. Party package"
+      },
+      {
+        "img": "../images/cookies/partyPackages/pinkGoldPartyRosePops.jpeg",
+        "description": "Pink and gold party rose pops cookies. Party package"
       }
     ],
     "logoCookies": [
@@ -126,6 +142,22 @@
       {
         "img": "../images/cookies/logoCookies/torpedo.jpeg",
         "description": "a company logo cookie: Torpedo  "
+      },
+      {
+        "img": "../images/cookies/logoCookies/logoBasketball.jpeg",
+        "description": "Basketball logo cookies"
+      },
+      {
+        "img": "../images/cookies/logoCookies/logoBlueJersey.jpeg",
+        "description": "Blue jersey logo cookies"
+      },
+      {
+        "img": "../images/cookies/logoCookies/logoSoccer.jpeg",
+        "description": "Soccer logo cookies"
+      },
+      {
+        "img": "../images/cookies/logoCookies/logoMei.jpeg",
+        "description": "Meitheal company logo cookies"
       }
     ],
     "birthdayParty": [
@@ -256,7 +288,48 @@
       {
         "img": "../images/cookies/birthdayParty/50.jpeg",
         "description": "Birthday cookies with 50 theme."
+      },
+      {
+        "img": "../images/cookies/birthdayParty/bdaycook1.jpeg",
+        "description": "Birthday cookies batch with 80yr"
+      },
+      {
+        "img": "../images/cookies/birthdayParty/bdaycook2.jpeg",
+        "description": "Birthday cookies batch with strawberry"
+      },
+      {
+        "img": "../images/cookies/birthdayParty/bdaycook3.jpeg",
+        "description": "Birthday cookies batch with pink"
+      },
+      {
+        "img": "../images/cookies/birthdayParty/bdaycook4.jpeg",
+        "description": "Birthday cookies batch with pink and white"
+      },
+      {
+        "img": "../images/cookies/birthdayParty/bdaycook5.jpeg",
+        "description": "Birthday cookies batch with black and white 20yr"
+      },
+      {
+        "img": "../images/cookies/birthdayParty/bdaycook6.jpeg",
+        "description": "Birthday cookies batch with pink, red and 50"
+      },
+      {
+        "img": "../images/cookies/birthdayParty/bdaycook7.jpeg",
+        "description": "Birthday cookies batch with balloons, gold, black, and white"
+      },
+      {
+        "img": "../images/cookies/birthdayParty/bdaycook8.jpeg",
+        "description": "Birthday cookies batch with a tower of gold, black and white"
+      },
+      {
+        "img": "../images/cookies/birthdayParty/bdaycook9.jpeg",
+        "description": "Birthday cookies batch with gambling, playing cards"
+      },
+      {
+        "img": "../images/cookies/birthdayParty/bdaycook10.jpeg",
+        "description": "Birthday cookies batch with 75yr and gold"
       }
+      
     ],
     "baptism": [
       {
@@ -368,6 +441,30 @@
       {
         "img": "../images/cookies/babyShower/sugarPumpkin.jpeg",
         "description": "Sugar pumpkin cookies for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/bsBlue.jpeg",
+        "description": "Baby shower blue cookies for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/bsTowerCake.jpeg",
+        "description": "Baby shower pink cake pop tower cookies for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/bsCookie.jpeg",
+        "description": "Baby shower cookie for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/bsCoffee.jpeg",
+        "description": "Baby shower coffee cookies for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/bsBottle.jpeg",
+        "description": "Baby shower bottle cookies for a baby shower."
+      },
+      {
+        "img": "../images/cookies/babyShower/bsPopTower.jpeg",
+        "description": "Baby shower cake pop tower cookies for a baby shower."
       }
     ],
     "firstCommunion": [
@@ -394,6 +491,30 @@
       {
         "img": "../images/cookies/firstCommunion/sugarBox.jpeg",
         "description": "A sugar box cookie for first communion."
+      },
+      {
+        "img": "../images/cookies/firstCommunion/cPink.jpeg",
+        "description": "Pink communion cookies bunch"
+      },
+      {
+        "img": "../images/cookies/firstCommunion/cBlue.png",
+        "description": "Blue communion cookies bunch"
+      },
+      {
+        "img": "../images/cookies/firstCommunion/cGreen.jpeg",
+        "description": "Green communion cookies bunch"
+      },
+      {
+        "img": "../images/cookies/firstCommunion/cWhite.jpeg",
+        "description": "White communion cookies bunch"
+      },
+      {
+        "img": "../images/cookies/firstCommunion/cPurple.jpeg",
+        "description": "Purple communion cookies bunch"
+      },
+      {
+        "img": "../images/cookies/firstCommunion/cTower.png",
+        "description": "Communion cookie tower"
       }
     ],
     "easter": [
@@ -486,6 +607,26 @@
       {
         "img": "../images/cookies/graduation/gradGift.jpeg",
         "description": "A box of graduation-themed cookies."
+      },
+      {
+        "img": "../images/cookies/graduation/gradLP.jpeg",
+        "description": "College Graduate cookies from LP"
+      },
+      {
+        "img": "../images/cookies/graduation/gradBlue2026.jpeg",
+        "description": "Blue graduation cookies for 2026"
+      },
+      {
+        "img": "../images/cookies/graduation/gradMZ.jpeg",
+        "description": "Graduation cookies for MZ, Miz Zou"
+      },
+      {
+        "img": "../images/cookies/graduation/gradPortraitCookie.jpeg",
+        "description": "A portrait graduation cookie."
+      },
+      {
+        "img": "../images/cookies/graduation/GradBW2026.jpeg",
+        "description": "Black and white graduation cookies for 2026"
       }
     ],
     "teacherAppreciation": [
@@ -546,6 +687,22 @@
       {
         "img": "../images/cookies/mothersDay/sugarBox.jpeg",
         "description": "A box of sugar cookies themed for Mother's Day."
+      },
+      {
+        "img": "../images/cookies/mothersDay/mdBundle.jpeg",
+        "description": ""
+      },
+      {
+        "img": "../images/cookies/mothersDay/mdCakePopBundle.jpeg",
+        "description": ""
+      },
+      {
+        "img": "../images/cookies/mothersDay/mdHotChocMugs.jpeg",
+        "description": ""
+      },
+      {
+        "img": "../images/cookies/mothersDay/mdRedBasket.jpeg",
+        "description": ""
       }
     ],
     "fathersDay": [
@@ -1225,58 +1382,86 @@
         "description": "A paint-your-own penguin cookie kit."
       }
     ],
-    "roses": [
+    "floral": [
       {
-        "img": "../images/cookies/roses/oreoPinkSingle.jpeg",
+        "img": "../images/cookies/floral/oreoPinkSingle.jpeg",
         "description": "A single pink Oreo cookie shaped like a rose."
       },
       {
-        "img": "../images/cookies/roses/oreoRedSingle.jpeg",
+        "img": "../images/cookies/floral/oreoRedSingle.jpeg",
         "description": "A single red Oreo cookie shaped like a rose."
       },
       {
-        "img": "../images/cookies/roses/pinkRose.jpeg",
+        "img": "../images/cookies/floral/pinkRose.jpeg",
         "description": "A pink rose-shaped cookie."
       },
       {
-        "img": "../images/cookies/roses/redRose.jpeg",
+        "img": "../images/cookies/floral/redRose.jpeg",
         "description": "A red rose-shaped cookie."
       },
       {
-        "img": "../images/cookies/roses/roseBunch.jpeg",
+        "img": "../images/cookies/floral/roseBunch.jpeg",
         "description": "A bunch of rose-shaped cookies."
       },
       {
-        "img": "../images/cookies/roses/roseCakePops.jpeg",
+        "img": "../images/cookies/floral/roseCakePops.jpeg",
         "description": "A set of rose-shaped cake pops."
       },
       {
-        "img": "../images/cookies/roses/roseCakePopsLargeAngle.jpeg",
+        "img": "../images/cookies/floral/roseCakePopsLargeAngle.jpeg",
         "description": "A large angle view of rose-shaped cake pops."
       },
       {
-        "img": "../images/cookies/roses/roseOreoBunch.jpeg",
+        "img": "../images/cookies/floral/roseOreoBunch.jpeg",
         "description": "A bunch of rose-shaped Oreo cookies."
       },
       {
-        "img": "../images/cookies/roses/rosePretzel.jpeg",
+        "img": "../images/cookies/floral/rosePretzel.jpeg",
         "description": "A pretzel shaped like a rose."
       },
       {
-        "img": "../images/cookies/roses/rosesAndMore.jpeg",
+        "img": "../images/cookies/floral/rosesAndMore.jpeg",
         "description": "A collection of rose-themed treats."
       },
       {
-        "img": "../images/cookies/roses/threeRedRoses.jpeg",
+        "img": "../images/cookies/floral/threeRedRoses.jpeg",
         "description": "A trio of red rose-shaped cookies."
       },
       {
-        "img": "../images/cookies/roses/threeRoseCookies.jpeg",
+        "img": "../images/cookies/floral/threeRoseCookies.jpeg",
         "description": "A set of three rose-shaped cookies."
       },
       {
-        "img": "../images/cookies/roses/threeRoses.jpeg",
+        "img": "../images/cookies/floral/threeRoses.jpeg",
         "description": "A collection of three rose-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/floral/rosePopStand.jpeg",
+        "description": "A stand for displaying rose-shaped cake pops."
+      },
+      {
+        "img": "../images/cookies/floral/hotChocRoseMugs.jpeg",
+        "description": "A set of hot chocolate mugs."
+      },
+      {
+        "img": "../images/cookies/floral/chocRoseBasket.jpeg",
+        "description": "A basket of chocolate roses."
+      },
+      {
+        "img": "../images/cookies/floral/roseCookies.jpeg",
+        "description": "A batch of rose-shaped cookies."
+      },
+      {
+        "img": "../images/cookies/floral/redFloralCakePops.jpeg",
+        "description": "A set of red floral-shaped cake pops."
+      },
+      {
+        "img": "../images/cookies/floral/floralCakePops.jpeg",
+        "description": "A set of floral-shaped cake pops."
+      },
+      {
+        "img": "../images/cookies/floral/floralStandCakePops.jpeg",
+        "description": "A stand for displaying floral-shaped cake pops."
       }
     ],
     "summer": [
@@ -1295,6 +1480,24 @@
       {
         "img": "../images/cookies/summer/sumFlow.jpeg",
         "description": "Summer flower-shaped cookies, perfect for any occasion."
+      },
+      {
+        "img": "../images/cookies/summer/sumFlowers.jpeg",
+        "description": "Summer flower-shaped cookies in a batch of multiple colors, perfect for any occasion."
+      }
+    ],
+    "travel": [
+      {
+        "img": "../images/cookies/travel/travelCookies.jpeg",
+        "description": "Cookies perfect for travel."
+      },
+      {
+        "img": "../images/cookies/travel/travelTicket.jpeg",
+        "description": "Travel Ticket cookies for flight"
+      },
+      {
+        "img": "../images/cookies/travel/travelChipCookie.jpeg",
+        "description": "Travel cookies with a travel design"
       }
     ]
   }
