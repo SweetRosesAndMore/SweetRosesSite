@@ -35,6 +35,25 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/card.css" />
+
+    <style>
+      .custom-submit-btn {
+        --bs-btn-color: #ffffff;
+        --bs-btn-bg: #d95f7a;
+        --bs-btn-border-color: #d95f7a;
+        --bs-btn-hover-color: #ffffff;
+        --bs-btn-hover-bg: #b93f5e;
+        --bs-btn-hover-border-color: #b93f5e;
+        --bs-btn-focus-shadow-rgb: 217, 95, 122;
+        --bs-btn-active-color: #ffffff;
+        --bs-btn-active-bg: #a83250;
+        --bs-btn-active-border-color: #a83250;
+        --bs-btn-disabled-color: #ffffff;
+        --bs-btn-disabled-bg: #a83250;
+        --bs-btn-disabled-border-color: #a83250;
+        --bs-btn-disabled-opacity: 1;
+      }
+    </style>
   </head>
 
   <body>
@@ -154,9 +173,25 @@
           </div>
 
           <div class="col-12 text-center">
-            <button class="btn btn-primary px-5" type="submit">
+            <button class="btn custom-submit-btn px-5" type="submit">
               Send Request
             </button>
+          </div>
+
+          <div id="emailFallback" class="col-12 d-none">
+            <div class="alert alert-danger mb-0" role="alert">
+              <p class="mb-2">
+                We could not send your request through the website. You can
+                still send the same order using your email app.
+              </p>
+              <a
+                id="emailFallbackLink"
+                class="alert-link"
+                href="mailto:sweetrosesandmore@yahoo.com"
+              >
+                Open your email app
+              </a>
+            </div>
           </div>
         </form>
       </div>
@@ -168,11 +203,14 @@
         class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
       >
         <span class="footer-copy mb-2 mb-md-0">
-          &copy; 2025 Sweet Roses & More | All Rights Reserved
+          &copy; 2026 Sweet Roses & More | All Rights Reserved
         </span>
 
         <span class="footer-powered small">
-          Made by <a href="https://zentriky.com" target="_blank">Zentriky</a>
+          Made by
+          <a href="https://zentriky.com" target="_blank" rel="noopener"
+            >Zentriky</a
+          >
         </span>
       </div>
     </footer>
@@ -182,94 +220,140 @@
       class="toast-container position-fixed bottom-0 end-0 p-3"
       id="toastArea"
     ></div>
-<!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- EmailJS v4 -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- EmailJS v4 -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<script>
-  const SERVICE_ID = "service_zvqh11o";
-  const TEMPLATE_ID = "template_o7a1ugr";
-  const PUBLIC_KEY = "5b8-Ag4iRXl_7xsKu";
+    <script>
+      const SERVICE_ID = "service_zvqh11o";
+      const TEMPLATE_ID = "template_o7a1ugr";
+      const PUBLIC_KEY = "5b8-Ag4iRXl_7xsKu";
+      const CONTACT_EMAIL = "sweetrosesandmore@yahoo.com";
 
-  emailjs.init({
-    publicKey: PUBLIC_KEY,
-  });
+      const form = document.getElementById("orderForm");
+      const toastArea = document.getElementById("toastArea");
+      const submitButton = form.querySelector('button[type="submit"]');
+      const emailFallback = document.getElementById("emailFallback");
+      const emailFallbackLink = document.getElementById("emailFallbackLink");
 
-  const form = document.getElementById("orderForm");
-  const toastArea = document.getElementById("toastArea");
-  const submitButton = form.querySelector('button[type="submit"]');
+      let isSending = false;
 
-  let isSending = false;
+      if (window.emailjs) {
+        emailjs.init({
+          publicKey: PUBLIC_KEY,
+        });
+      }
 
-  function showToast(message, isSuccess = true) {
-    const toast = document.createElement("div");
+      function showToast(message, isSuccess = true) {
+        const toast = document.createElement("div");
 
-    toast.className =
-      `toast align-items-center text-bg-${isSuccess ? "success" : "danger"} border-0`;
+        toast.className =
+          `toast align-items-center text-bg-${isSuccess ? "success" : "danger"} border-0`;
 
-    toast.setAttribute("role", "alert");
-    toast.setAttribute("aria-live", "assertive");
-    toast.setAttribute("aria-atomic", "true");
+        toast.setAttribute("role", "alert");
+        toast.setAttribute("aria-live", "assertive");
+        toast.setAttribute("aria-atomic", "true");
 
-    toast.innerHTML = `
-      <div class="d-flex">
-        <div class="toast-body"></div>
-        <button
-          type="button"
-          class="btn-close btn-close-white me-2 m-auto"
-          data-bs-dismiss="toast"
-          aria-label="Close"
-        ></button>
-      </div>
-    `;
+        toast.innerHTML = `
+          <div class="d-flex">
+            <div class="toast-body"></div>
+            <button
+              type="button"
+              class="btn-close btn-close-white me-2 m-auto"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+        `;
 
-    toast.querySelector(".toast-body").textContent = message;
+        toast.querySelector(".toast-body").textContent = message;
+        toastArea.appendChild(toast);
 
-    toastArea.appendChild(toast);
+        if (window.bootstrap) {
+          const bsToast = bootstrap.Toast.getOrCreateInstance(toast, {
+            delay: 5000,
+          });
 
-    const bsToast = bootstrap.Toast.getOrCreateInstance(toast, {
-      delay: 5000,
-    });
+          bsToast.show();
+          toast.addEventListener("hidden.bs.toast", () => toast.remove());
+        } else {
+          toast.classList.add("show");
+          window.setTimeout(() => toast.remove(), 5000);
+        }
+      }
 
-    bsToast.show();
-    toast.addEventListener("hidden.bs.toast", () => toast.remove());
-  }
+      function prepareEmailFallback() {
+        const formData = new FormData(form);
+        const customerName = formData.get("from_name") || "Website customer";
+        const customerEmail = formData.get("reply_to") || "Not provided";
+        const phone = formData.get("phone") || "Not provided";
+        const desiredDate = formData.get("need_by") || "Not provided";
+        const orderDetails = formData.get("order_details") || "Not provided";
 
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
+        const subject = `Custom Cookie Order: ${customerName}`;
+        const body = [
+          `Name: ${customerName}`,
+          `Email: ${customerEmail}`,
+          `Phone: ${phone}`,
+          `Desired Date: ${desiredDate}`,
+          "",
+          "Order Details:",
+          orderDetails,
+        ].join("\n");
 
-    if (isSending) return;
+        emailFallbackLink.href =
+          `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}` +
+          `&body=${encodeURIComponent(body)}`;
+        emailFallback.classList.remove("d-none");
+      }
 
-    isSending = true;
-    submitButton.disabled = true;
-    submitButton.textContent = "Sending...";
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
 
-    try {
-      const response = await emailjs.sendForm(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        form
-      );
+        if (isSending) return;
 
-      console.log("EmailJS success:", response.status, response.text);
+        emailFallback.classList.add("d-none");
+        isSending = true;
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
 
-      showToast("Thank you! We’ll get back to you shortly.", true);
-      form.reset();
-    } catch (error) {
-      console.error("EmailJS error:", error);
+        try {
+          if (!window.emailjs) {
+            throw new Error("The EmailJS browser library did not load.");
+          }
 
-      const errorMessage =
-        error?.text ||
-        error?.message ||
-        "Something went wrong. Please try again.";
+          const templateParams = {
+            from_name: form.elements.from_name.value.trim(),
+            reply_to: form.elements.reply_to.value.trim(),
+            phone: form.elements.phone.value.trim(),
+            need_by: form.elements.need_by.value,
+            order_details: form.elements.order_details.value.trim(),
+          };
 
-      showToast(`Email could not send as we are having troubles connecting. Please reach out to us directly!: ${errorMessage}`, false);
-    } finally {
-      isSending = false;
-      submitButton.disabled = false;
-      submitButton.textContent = "Send Request";
-    }
-  });
-</script>
+          const response = await emailjs.send(
+            SERVICE_ID,
+            TEMPLATE_ID,
+            templateParams,
+          );
+
+          console.log("EmailJS success:", response.status, response.text);
+          showToast("Thank you! We’ll get back to you shortly.", true);
+          form.reset();
+        } catch (error) {
+          console.error("EmailJS error:", error);
+          prepareEmailFallback();
+          showToast(
+            "We could not send your request. Please use the email option below the form.",
+            false,
+          );
+        } finally {
+          isSending = false;
+          submitButton.disabled = false;
+          submitButton.textContent = "Send Request";
+        }
+      });
+    </script>
+  </body>
+</html>
